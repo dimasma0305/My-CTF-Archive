@@ -1,0 +1,281 @@
+WARNING: Duplicate port number(s) specified.  Are you alert enough to be using Nmap?  Have some coffee or Jolt(tm).
+# Nmap 7.92 scan initiated Wed Aug 31 17:55:06 2022 as: /bin/nmap -Pn -sV --script vuln -p22,80,443,22,80,443 --open -oN nmap/Vulns_shared.htb.nmap --system-dns --stats-every 3s shared.htb
+Nmap scan report for shared.htb (10.10.11.172)
+Host is up (0.079s latency).
+
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.4p1: 
+|     	CVE-2021-28041	4.6	https://vulners.com/cve/CVE-2021-28041
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-20012	4.3	https://vulners.com/cve/CVE-2016-20012
+|_    	CVE-2021-36368	2.6	https://vulners.com/cve/CVE-2021-36368
+80/tcp  open  http     nginx 1.18.0
+|_http-server-header: nginx/1.18.0
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2013-7091: ERROR: Script execution failed (use -d to debug)
+|_http-passwd: ERROR: Script execution failed (use -d to debug)
+| http-enum: 
+|_  /robots.txt: Robots file
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+443/tcp open  ssl/http nginx 1.18.0
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: nginx/1.18.0
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /blog/: Blog
+|   /weblog/: Blog
+|   /weblogs/: Blog
+|   /wordpress/: Blog
+|   /wiki/: Wiki
+|   /mediawiki/: Wiki
+|   /wiki/Main_Page: Wiki
+|   /tikiwiki/: Tikiwiki
+|   /cgi-bin/mj_wwwusr: Majordomo2 Mailing List
+|   /majordomo/mj_wwwusr: Majordomo2 Mailing List
+|   /j2ee/examples/servlets/: Oracle j2ee examples
+|   /j2ee/examples/jsp/: Oracle j2ee examples
+|   /dsc/: Trend Micro Data Loss Prevention Virtual Appliance
+|   /reg_1.htm: Polycom IP phone
+|   /adr.htm: Snom IP Phone
+|   /line_login.htm?l=1: Snom IP Phone
+|   /tbook.csv: Snom IP Phone
+|   /globalSIPsettings.html: Aastra IP Phone
+|   /SIPsettingsLine1.html: Aastra IP Phone
+|   /websvn/: WEBSVN Repository
+|   /login.stm: Belkin G Wireless Router
+|   /Manage.tri: Linksys WRT54G2
+|   //system.html: CMNC-200 IP Camera
+|   /main_configure.cgi: Intellinet IP Camera
+|   /OvCgi/Toolbar.exe: HP OpenView Network Node Manager
+|   /frontend/x3/: CPanel
+|   /egroupware/: eGroupware
+|   /aphpkb/: Andys PHP Knowledgebase
+|   /webedition/we/include/we_modules/: Web Edition
+|   /webedition/: Web Edition
+|   /Examples/: Possible documentation files
+|   /cgi-bin/vcs: Mitel Audio and Web Conferencing (AWC)
+|   /ocsreports/: OCS Inventory
+|   /forum/: Forum
+|   /forums/: Forum
+|   /smf/: Forum
+|   /phpbb/: Forum
+|   /manager/: Possible admin folder
+|   /admin/: Possible admin folder
+|   /admin/admin/: Possible admin folder
+|   /administrator/: Possible admin folder
+|   /moderator/: Possible admin folder
+|   /webadmin/: Possible admin folder
+|   /adminarea/: Possible admin folder
+|   /bb-admin/: Possible admin folder
+|   /adminLogin/: Possible admin folder
+|   /admin_area/: Possible admin folder
+|   /panel-administracion/: Possible admin folder
+|   /instadmin/: Possible admin folder
+|   /memberadmin/: Possible admin folder
+|   /administratorlogin/: Possible admin folder
+|   /adm/: Possible admin folder
+|   /joomla/administrator: Possible admin folder
+|   /siteadmin/login.html: Possible admin folder
+|   /admin/index.html: Possible admin folder
+|   /admin/login.html: Possible admin folder
+|   /admin/admin.html: Possible admin folder
+|   /admin_area/login.html: Possible admin folder
+|   /admin_area/index.html: Possible admin folder
+|   /admincp/: Possible admin folder
+|   /admincp/index.asp: Possible admin folder
+|   /admincp/index.html: Possible admin folder
+|   /admin/account.html: Possible admin folder
+|   /adminpanel.html: Possible admin folder
+|   /webadmin.html: Possible admin folder
+|   /webadmin/index.html: Possible admin folder
+|   /webadmin/admin.html: Possible admin folder
+|   /webadmin/login.html: Possible admin folder
+|   /admin/admin_login.html: Possible admin folder
+|   /admin_login.html: Possible admin folder
+|   /panel-administracion/login.html: Possible admin folder
+|   /admin_area/admin.html: Possible admin folder
+|   /bb-admin/index.html: Possible admin folder
+|   /bb-admin/login.html: Possible admin folder
+|   /bb-admin/admin.html: Possible admin folder
+|   /admin/home.html: Possible admin folder
+|   /pages/admin/admin-login.html: Possible admin folder
+|   /admin/admin-login.html: Possible admin folder
+|   /admin-login.html: Possible admin folder
+|   /admin/adminLogin.html: Possible admin folder
+|   /adminLogin.html: Possible admin folder
+|   /home.html: Possible admin folder
+|   /adminarea/index.html: Possible admin folder
+|   /adminarea/admin.html: Possible admin folder
+|   /admin/controlpanel.html: Possible admin folder
+|   /admin.html: Possible admin folder
+|   /admin/cp.html: Possible admin folder
+|   /cp.html: Possible admin folder
+|   /moderator.html: Possible admin folder
+|   /administrator/index.html: Possible admin folder
+|   /administrator/login.html: Possible admin folder
+|   /user.html: Possible admin folder
+|   /administrator/account.html: Possible admin folder
+|   /administrator.html: Possible admin folder
+|   /login.html: Possible admin folder
+|   /modelsearch/login.html: Possible admin folder
+|   /moderator/login.html: Possible admin folder
+|   /adminarea/login.html: Possible admin folder
+|   /panel-administracion/index.html: Possible admin folder
+|   /panel-administracion/admin.html: Possible admin folder
+|   /modelsearch/index.html: Possible admin folder
+|   /modelsearch/admin.html: Possible admin folder
+|   /admincontrol/login.html: Possible admin folder
+|   /adm/index.html: Possible admin folder
+|   /adm.html: Possible admin folder
+|   /moderator/admin.html: Possible admin folder
+|   /account.html: Possible admin folder
+|   /controlpanel.html: Possible admin folder
+|   /admincontrol.html: Possible admin folder
+|   /wp-json: Possible admin folder
+|   /account.cfm: Possible admin folder
+|   /admin/account.cfm: Possible admin folder
+|   /admin/index.cfm: Possible admin folder
+|   /admin/login.cfm: Possible admin folder
+|   /admin/admin.cfm: Possible admin folder
+|   /admin.cfm: Possible admin folder
+|   /admin/admin_login.cfm: Possible admin folder
+|   /admin_login.cfm: Possible admin folder
+|   /adminpanel.cfm: Possible admin folder
+|   /admin/controlpanel.cfm: Possible admin folder
+|   /admincontrol.cfm: Possible admin folder
+|   /panel-administracion/login.cfm: Possible admin folder
+|   /admin/cp.cfm: Possible admin folder
+|   /pages/admin/admin-login.cfm: Possible admin folder
+|   /admincp/index.cfm: Possible admin folder
+|   /admincp/login.cfm: Possible admin folder
+|   /admin_area/admin.cfm: Possible admin folder
+|   /admin_area/login.cfm: Possible admin folder
+|   /moderator/login.cfm: Possible admin folder
+|   /administrator/login.cfm: Possible admin folder
+|   /moderator.cfm: Possible admin folder
+|   /modelsearch/index.cfm: Possible admin folder
+|   /panel-administracion/admin.cfm: Possible admin folder
+|   /adm/admloginuser.cfm: Possible admin folder
+|   /adm.cfm: Possible admin folder
+|   /adm_auth.cfm: Possible admin folder
+|   /administratorlogin.cfm: Possible admin folder
+|   /webadmin.cfm: Possible admin folder
+|   /webadmin/index.cfm: Possible admin folder
+|   /modelsearch/login.cfm: Possible admin folder
+|   /login.cfm: Possible admin folder
+|   /administrator.cfm: Possible admin folder
+|   /administrator/account.cfm: Possible admin folder
+|   /adminLogin.cfm: Possible admin folder
+|   /siteadmin/login.cfm: Possible admin folder
+|   /admin2/index.cfm: Possible admin folder
+|   /adm/index.cfm: Possible admin folder
+|   /admin_area/index.cfm: Possible admin folder
+|   /bb-admin/index.cfm: Possible admin folder
+|   /bb-admin/login.cfm: Possible admin folder
+|   /bb-admin/admin.cfm: Possible admin folder
+|   /siteadmin/index.cfm: Possible admin folder
+|   /memberadmin.cfm: Possible admin folder
+|   /admin2/login.cfm: Possible admin folder
+|   /admloginuser.cfm: Possible admin folder
+|   /admincontrol/login.cfm: Possible admin folder
+|   /administrator/index.cfm: Possible admin folder
+|   /modelsearch/admin.cfm: Possible admin folder
+|   /panel-administracion/index.cfm: Possible admin folder
+|   /adminarea/login.cfm: Possible admin folder
+|   /adminarea/admin.cfm: Possible admin folder
+|   /adminarea/index.cfm: Possible admin folder
+|   /admin/adminLogin.cfm: Possible admin folder
+|   /webadmin/login.cfm: Possible admin folder
+|   /webadmin/admin.cfm: Possible admin folder
+|   /user.cfm: Possible admin folder
+|   /controlpanel.cfm: Possible admin folder
+|   /moderator/admin.cfm: Possible admin folder
+|_  /cp.cfm: Possible admin folder
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=shared.htb
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|     Form action: //shared.htb/index.php?controller=search
+|     
+|     Path: https://shared.htb:443/index.php
+|     Form id: 
+|_    Form action: https://shared.htb/index.php#blockEmailSubscription_displayFooterBefore
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 31 17:58:24 2022 -- 1 IP address (1 host up) scanned in 197.81 seconds

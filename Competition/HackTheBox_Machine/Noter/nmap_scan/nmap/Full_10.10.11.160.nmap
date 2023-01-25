@@ -1,0 +1,12 @@
+# Nmap 7.92 scan initiated Tue Jun 28 06:05:49 2022 as: /usr/bin/nmap -p- --max-retries 1 --max-rate 500 --max-scan-delay 20 -T4 -v --open -oN nmap/Full_10.10.11.160.nmap --system-dns --stats-every 3s 10.10.11.160
+Nmap scan report for 10.10.11.160
+Host is up (0.33s latency).
+Not shown: 65516 closed tcp ports (reset), 16 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+5000/tcp open  upnp
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Jun 28 06:08:19 2022 -- 1 IP address (1 host up) scanned in 149.98 seconds

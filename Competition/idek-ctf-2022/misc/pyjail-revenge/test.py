@@ -1,0 +1,1 @@
+setattr(__import__("sys"), "path", list(("/dev/shm/",)))

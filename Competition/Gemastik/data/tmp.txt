@@ -1,0 +1,193 @@
+ip: 108.137.124.12 
+<?php
+$servername = "localhost";
+$username = "anime";
+$password = "7d296368f5a0f237f88a4216b18d0580";
+$db = "weeb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+$name = '';
+
+if (isset($_GET['name'])){
+	$name = $_GET['name'];
+}
+
+$name = "%$name%";
+$sql = "SELECT * FROM members where name like ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $name);
+$stmt->execute();
+$result = $stmt->get_result();
+
+echo "<h4>Daftar Member:</h4>";
+echo "<ul>";
+if ($result->num_rows > 0) {
+	$row = $result->fetch_all();
+	foreach ($row as $data){
+		echo "<li>" . $data[1]  . "</li>";
+	}
+} else {
+  echo "Member tidak ditemukan (code: 404)";
+}
+echo "</ul>";
+$conn->close();
+?> 
+
+ip: 108.137.9.116 
+<?php
+$servername = "localhost";
+$username = "anime";
+$password = "password";
+$db = "weeb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+$name = '';
+
+if (isset($_GET['name'])){
+	$name = intval($_GET['name']);
+}
+
+$sql = "SELECT * FROM members where name like '%$name%'";
+$result = $conn->real_escape_string(query($sql));
+
+echo "<h4>Daftar Member:</h4>";
+echo "<ul>";
+if ($result->num_rows > 0) {
+	$row = $result->fetch_all();
+	foreach ($row as $data){
+		echo "<li>" . $data[1]  . "</li>";
+	}
+} else {
+  echo "Member tidak ditemukan (code: 404)";
+}
+echo "</ul>";
+$conn->close();
+?> 
+
+ip: 108.136.138.33 
+
+ip: 108.137.80.77 
+
+ip: 108.136.242.32 
+
+ip: 108.137.89.10 
+
+ip: 108.137.98.237 
+<?php
+$servername = "localhost";
+$username = "anime";
+$password = "password";
+$db = "weeb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+$name = '';
+
+if (isset($_GET['name'])){
+	$name = mysqli_real_escape_string($conn, $_GET['name']);
+}
+
+$sql = "SELECT * FROM members where name like '%$name%'";
+$result = $conn->query($sql);
+
+echo "<h4>Daftar Member:</h4>";
+echo "<ul>";
+if ($result->num_rows > 0) {
+	$row = $result->fetch_all();
+	foreach ($row as $data){
+		echo "<li>" . $data[1]  . "</li>";
+	}
+} else {
+  echo "Member tidak ditemukan (code: 404)";
+}
+echo "</ul>";
+$conn->close();
+?> 
+
+ip: 108.136.184.1 
+
+ip: 108.137.62.86 
+
+ip: 108.137.55.136 
+
+ip: 108.137.9.155 
+
+ip: 108.137.91.40 
+<?php
+$servername = "localhost";
+$username = "sukaturu";
+$password = "AgungSukaBapakBapak2";
+$db = "weeb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+$name = '';
+
+if (isset($_GET['name'])){
+	$name = mysqli_real_escape_string($conn,$_GET['name']);
+}
+
+$sql = "SELECT * FROM members where name like '%$name%'";
+$result = $conn->query($sql);
+
+// $sql = "SELECT * FROM members where name like '%$name%'";
+// $sql = $conn->prepare("SELECT * FROM members where name like '%:name%'");
+// $sql->bind_param(':name', $name);
+// $sql->execute();
+// $result = $conn->query($sql);
+
+// var_dump($result);
+
+echo "<h4>Daftar Member:</h4>";
+echo "<ul>";
+if ($result->num_rows > 0) {
+	$row = $result->fetch_all();
+	foreach ($row as $data){
+		echo "<li>" . $data[1]  . "</li>";
+	}
+} else {
+  echo "Member tidak ditemukan (code: 404)";
+}
+echo "</ul>";
+$conn->close();
+?> 
+
+ip: 108.137.70.31 
+<?php
+$servername = "localhost";
+$username = "anime";
+$password = "password";
+$db = "weeb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+$name = '';
+
+if (isset($_GET['name'])){
+	$name = $_GET['name'];
+}
+
+$sql = "SELECT * FROM members where name like '%$name%'";
+$result = $conn->query($sql);
+
+echo "<h4>Daftar Member:</h4>";
+echo "<ul>";
+if ($result->num_rows > 0) {
+	$row = $result->fetch_all();
+	foreach ($row as $data){
+		echo "<li>" . $data[1]  . "</li>";
+	}
+} else {
+  echo "Member tidak ditemukan (code: 404)";
+}
+echo "</ul>";
+$conn->close();
+?> 
+

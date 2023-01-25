@@ -1,0 +1,12 @@
+# Nmap 7.92 scan initiated Sat Jul  9 17:11:08 2022 as: /usr/bin/nmap -sCV -p80 --open -oN nmap/Script_10.10.0.113.nmap --system-dns --stats-every 2s 10.10.0.113
+Nmap scan report for 10.10.0.113
+Host is up (0.19s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+| http-title: Login | Challenge CyberAcademy
+|_Requested resource was login.php
+|_http-server-header: Apache/2.4.38 (Debian)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul  9 17:11:18 2022 -- 1 IP address (1 host up) scanned in 10.12 seconds

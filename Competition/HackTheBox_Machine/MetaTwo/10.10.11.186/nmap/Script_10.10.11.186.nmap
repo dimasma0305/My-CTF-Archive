@@ -1,0 +1,18 @@
+# Nmap 7.92 scan initiated Fri Nov 11 20:35:27 2022 as: /usr/bin/nmap -sCV -p21,22,80 --open -oN nmap/Script_10.10.11.186.nmap --system-dns --stats-every 2s 10.10.11.186
+Nmap scan report for 10.10.11.186
+Host is up (0.39s latency).
+
+PORT   STATE SERVICE    VERSION
+21/tcp open  tcpwrapped
+22/tcp open  ssh        OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 c4:b4:46:17:d2:10:2d:8f:ec:1d:c9:27:fe:cd:79:ee (RSA)
+|   256 2a:ea:2f:cb:23:e8:c5:29:40:9c:ab:86:6d:cd:44:11 (ECDSA)
+|_  256 fd:78:c0:b0:e2:20:16:fa:05:0d:eb:d8:3f:12:a4:ab (ED25519)
+80/tcp open  http       nginx 1.18.0
+|_http-title: Did not follow redirect to http://metapress.htb/
+|_http-server-header: nginx/1.18.0
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov 11 20:35:46 2022 -- 1 IP address (1 host up) scanned in 19.00 seconds

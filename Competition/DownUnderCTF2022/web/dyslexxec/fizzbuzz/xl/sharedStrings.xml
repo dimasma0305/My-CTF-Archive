@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="5" uniqueCount="5"><si><t>Program</t></si><si><t>n integers</t></si><si><t>n%3 == 0, fizz</t></si><si><t>n%5 == 0, buzz</t></si><si><t>if n%3 == 0 and n%5 == 0, fizzbuzz</t></si></sst>

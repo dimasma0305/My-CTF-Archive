@@ -1,0 +1,22 @@
+# Nmap 7.92 scan initiated Sat Aug  6 21:21:30 2022 as: /usr/bin/nmap -sCV -p3306 --open -oN nmap/Script_10.10.0.105.nmap --system-dns --stats-every 2s 10.10.0.105
+Nmap scan report for 10.10.0.105
+Host is up (0.037s latency).
+
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 5.7.35-0ubuntu0.18.04.2
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.35_Auto_Generated_Server_Certificate
+| Not valid before: 2021-10-11T15:12:00
+|_Not valid after:  2031-10-09T15:12:00
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.35-0ubuntu0.18.04.2
+|   Thread ID: 3
+|   Capabilities flags: 65535
+|   Some Capabilities: IgnoreSigpipes, ODBCClient, DontAllowDatabaseTableColumn, Speaks41ProtocolOld, LongColumnFlag, Speaks41ProtocolNew, SupportsCompression, IgnoreSpaceBeforeParenthesis, SwitchToSSLAfterHandshake, FoundRows, LongPassword, SupportsTransactions, InteractiveClient, ConnectWithDatabase, Support41Auth, SupportsLoadDataLocal, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: =\x13\x18(\x18E\x06\x12\x0C6\x12\x0Fl]I5. }?
+|_  Auth Plugin Name: mysql_native_password
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug  6 21:21:32 2022 -- 1 IP address (1 host up) scanned in 2.44 seconds

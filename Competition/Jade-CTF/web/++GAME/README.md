@@ -1,0 +1,1 @@
+http://api/register.php?username=&password=&signature=25ac91e41369a3ac5117756c910326eed2023c85

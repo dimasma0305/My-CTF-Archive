@@ -1,0 +1,15 @@
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://shared.htb:80" | tee "recon/nikto_shared.htb_80.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '' -u "http://shared.htb:80/FUZZ" | tee "recon/ffuf_shared.htb_80.txt"
+
+sslscan "shared.htb" | tee "recon/sslscan_shared.htb_443.txt"
+nikto -host "https://shared.htb:443" -ssl | tee "recon/nikto_shared.htb_443.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '.asp,.php,.jsp,.html,.aspx,' -u "https://shared.htb:443/FUZZ" | tee "recon/ffuf_shared.htb_443.txt"
+
+
+
+

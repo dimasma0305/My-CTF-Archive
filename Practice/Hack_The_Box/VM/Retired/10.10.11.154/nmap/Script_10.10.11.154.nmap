@@ -1,0 +1,17 @@
+# Nmap 7.92 scan initiated Thu Aug 11 15:18:17 2022 as: /usr/bin/nmap -sCV -p22,80 --open -oN nmap/Script_10.10.11.154.nmap --system-dns --stats-every 2s 10.10.11.154
+Nmap scan report for 10.10.11.154
+Host is up (0.068s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 77:b2:16:57:c2:3c:10:bf:20:f1:62:76:ea:81:e4:69 (RSA)
+|   256 cb:09:2a:1b:b9:b9:65:75:94:9d:dd:ba:11:28:5b:d2 (ECDSA)
+|_  256 0d:40:f0:f5:a8:4b:63:29:ae:08:a1:66:c1:26:cd:6b (ED25519)
+80/tcp open  http    nginx
+| http-title: Agency - Start Bootstrap Theme
+|_Requested resource was /index.php?page=default.html
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 11 15:18:27 2022 -- 1 IP address (1 host up) scanned in 10.07 seconds

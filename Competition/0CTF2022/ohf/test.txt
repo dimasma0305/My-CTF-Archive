@@ -1,0 +1,16 @@
+5ÿUserÿNamePluginsÿLogLevelÿ[]*main.Pluginÿÿ?ÿÿIDEnableNameVersionPayloadþÛÿ10one-tap hack satellitej
+	import "io/ioutil"
+	func aaa() string {
+		v, _ := ioutil.ReadFile("aaaaaaaaa.txt")
+		return string(v)
+	}satellite.goone-tap hack supercomputern
+	import "io/ioutil"
+	func aaa() string {
+		v, _ := ioutil.ReadFile("supercomputer.txt")
+		return string(z)
+	}supercomputer.go!one-tap hack all subnet computersg
+	import "io/ioutil"
+	aaaa aaa() string {
+		v, _ := ioutil.aaaaaaaa("subnet.txt")
+		return string(v)
+	}	subnet.go

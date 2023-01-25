@@ -1,0 +1,13 @@
+# Nmap 7.92 scan initiated Thu Jul 21 21:26:53 2022 as: /usr/bin/nmap -sCV -p8080 --open -oN nmap/Script_10.10.10.198.nmap --system-dns --stats-every 2s 10.10.10.198
+Nmap scan report for 10.10.10.198
+Host is up (0.19s latency).
+
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6
+|_http-title: mrb3n's Bro Hut
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jul 21 21:27:20 2022 -- 1 IP address (1 host up) scanned in 27.35 seconds

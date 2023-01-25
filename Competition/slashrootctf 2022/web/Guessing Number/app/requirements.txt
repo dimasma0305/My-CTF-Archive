@@ -1,0 +1,4 @@
+Flask
+Jinja2
+flask_session
+wsgiserver

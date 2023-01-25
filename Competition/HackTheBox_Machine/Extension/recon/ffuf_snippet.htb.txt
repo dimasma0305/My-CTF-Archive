@@ -1,0 +1,48 @@
+
+[2K.hta                    [Status: 403, Size: 276, Words: 20, Lines: 10, Duration: 420ms][0m
+
+[2K.htaccess               [Status: 403, Size: 276, Words: 20, Lines: 10, Duration: 420ms][0m
+
+[2K.htpasswd               [Status: 403, Size: 276, Words: 20, Lines: 10, Duration: 420ms][0m
+
+[2K.htpasswd.php           [Status: 403, Size: 276, Words: 20, Lines: 10, Duration: 420ms][0m
+
+[2K.hta.php                [Status: 403, Size: 276, Words: 20, Lines: 10, Duration: 419ms][0m
+
+[2K.htaccess.php           [Status: 403, Size: 276, Words: 20, Lines: 10, Duration: 419ms][0m
+
+[2K                        [Status: 200, Size: 37887, Words: 1022, Lines: 30, Duration: 420ms][0m
+
+[2Kcgi-bin/                [Status: 301, Size: 311, Words: 20, Lines: 10, Duration: 350ms][0m
+
+[2Kcss                     [Status: 301, Size: 308, Words: 20, Lines: 10, Duration: 476ms][0m
+
+[2Kdashboard               [Status: 302, Size: 342, Words: 60, Lines: 12, Duration: 1402ms][0m
+
+[2Kfavicon.ico             [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 518ms][0m
+
+[2Kforgot-password         [Status: 200, Size: 37782, Words: 1022, Lines: 30, Duration: 1404ms][0m
+
+[2Kimages                  [Status: 301, Size: 311, Words: 20, Lines: 10, Duration: 469ms][0m
+
+[2Kindex.php               [Status: 200, Size: 37907, Words: 1022, Lines: 30, Duration: 1079ms][0m
+
+[2Kindex.php               [Status: 200, Size: 37907, Words: 1022, Lines: 30, Duration: 1390ms][0m
+
+[2Kjs                      [Status: 301, Size: 307, Words: 20, Lines: 10, Duration: 517ms][0m
+
+[2Klogin                   [Status: 200, Size: 37797, Words: 1022, Lines: 30, Duration: 955ms][0m
+
+[2Klogout                  [Status: 405, Size: 825, Words: 132, Lines: 23, Duration: 1066ms][0m
+
+[2Knew                     [Status: 302, Size: 342, Words: 60, Lines: 12, Duration: 1459ms][0m
+
+[2Kregister                [Status: 200, Size: 37745, Words: 1022, Lines: 30, Duration: 1460ms][0m
+
+[2Kserver-status           [Status: 403, Size: 276, Words: 20, Lines: 10, Duration: 288ms][0m
+
+[2Ksnippets                [Status: 302, Size: 342, Words: 60, Lines: 12, Duration: 1353ms][0m
+
+[2Kusers                   [Status: 302, Size: 342, Words: 60, Lines: 12, Duration: 1021ms][0m
+
+[2Kweb.config              [Status: 200, Size: 1183, Words: 231, Lines: 29, Duration: 340ms][0m

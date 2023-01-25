@@ -1,0 +1,8 @@
+# Nmap 7.92 scan initiated Wed Aug 31 17:52:50 2022 as: /bin/nmap -Pn -sU --max-retries 1 --open --open -oN nmap/UDP_shared.htb.nmap --system-dns --stats-every 3s shared.htb
+Warning: 10.10.11.172 giving up on port because retransmission cap hit (1).
+Nmap scan report for shared.htb (10.10.11.172)
+Host is up (0.078s latency).
+All 1000 scanned ports on shared.htb (10.10.11.172) are in ignored states.
+Not shown: 896 open|filtered udp ports (no-response), 104 closed udp ports (port-unreach)
+
+# Nmap done at Wed Aug 31 17:54:29 2022 -- 1 IP address (1 host up) scanned in 99.44 seconds

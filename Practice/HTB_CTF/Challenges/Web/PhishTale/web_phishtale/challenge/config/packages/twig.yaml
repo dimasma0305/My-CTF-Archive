@@ -1,0 +1,5 @@
+twig:
+    paths:
+        '%kernel.project_dir%/templates': ~
+        '%kernel.project_dir%/public/static/phish_templates': phish
+    cache: false

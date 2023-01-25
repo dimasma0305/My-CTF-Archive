@@ -1,0 +1,403 @@
+WARNING: Duplicate port number(s) specified.  Are you alert enough to be using Nmap?  Have some coffee or Jolt(tm).
+# Nmap 7.92 scan initiated Thu Jul 14 14:49:11 2022 as: /usr/bin/nmap -sV --script vuln -p22,53,80,5555,7777,9998,9999,22,53,80,5555,7777,9201,9998,9999 --open -oN nmap/Vulns_10.13.37.10.nmap --system-dns --stats-every 3s 10.13.37.10
+Nmap scan report for 10.13.37.10
+Host is up (0.44s latency).
+
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.2p2: 
+|     	PACKETSTORM:140070	7.8	https://vulners.com/packetstorm/PACKETSTORM:140070	*EXPLOIT*
+|     	EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	7.8	https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09	*EXPLOIT*
+|     	EDB-ID:40888	7.8	https://vulners.com/exploitdb/EDB-ID:40888	*EXPLOIT*
+|     	CVE-2016-8858	7.8	https://vulners.com/cve/CVE-2016-8858
+|     	CVE-2016-6515	7.8	https://vulners.com/cve/CVE-2016-6515
+|     	1337DAY-ID-26494	7.8	https://vulners.com/zdt/1337DAY-ID-26494	*EXPLOIT*
+|     	SSV:92579	7.5	https://vulners.com/seebug/SSV:92579	*EXPLOIT*
+|     	CVE-2016-10009	7.5	https://vulners.com/cve/CVE-2016-10009
+|     	1337DAY-ID-26576	7.5	https://vulners.com/zdt/1337DAY-ID-26576	*EXPLOIT*
+|     	SSV:92582	7.2	https://vulners.com/seebug/SSV:92582	*EXPLOIT*
+|     	CVE-2016-10012	7.2	https://vulners.com/cve/CVE-2016-10012
+|     	CVE-2015-8325	7.2	https://vulners.com/cve/CVE-2015-8325
+|     	SSV:92580	6.9	https://vulners.com/seebug/SSV:92580	*EXPLOIT*
+|     	CVE-2016-10010	6.9	https://vulners.com/cve/CVE-2016-10010
+|     	1337DAY-ID-26577	6.9	https://vulners.com/zdt/1337DAY-ID-26577	*EXPLOIT*
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	EDB-ID:46193	5.8	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	1337DAY-ID-32328	5.8	https://vulners.com/zdt/1337DAY-ID-32328	*EXPLOIT*
+|     	1337DAY-ID-32009	5.8	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+|     	SSV:91041	5.5	https://vulners.com/seebug/SSV:91041	*EXPLOIT*
+|     	PACKETSTORM:140019	5.5	https://vulners.com/packetstorm/PACKETSTORM:140019	*EXPLOIT*
+|     	PACKETSTORM:136234	5.5	https://vulners.com/packetstorm/PACKETSTORM:136234	*EXPLOIT*
+|     	EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	5.5	https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F	*EXPLOIT*
+|     	EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	5.5	https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138	*EXPLOIT*
+|     	EXPLOITPACK:1902C998CBF9154396911926B4C3B330	5.5	https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330	*EXPLOIT*
+|     	EDB-ID:40858	5.5	https://vulners.com/exploitdb/EDB-ID:40858	*EXPLOIT*
+|     	EDB-ID:40119	5.5	https://vulners.com/exploitdb/EDB-ID:40119	*EXPLOIT*
+|     	EDB-ID:39569	5.5	https://vulners.com/exploitdb/EDB-ID:39569	*EXPLOIT*
+|     	CVE-2016-3115	5.5	https://vulners.com/cve/CVE-2016-3115
+|     	SSH_ENUM	5.0	https://vulners.com/canvas/SSH_ENUM	*EXPLOIT*
+|     	PACKETSTORM:150621	5.0	https://vulners.com/packetstorm/PACKETSTORM:150621	*EXPLOIT*
+|     	EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	5.0	https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0	*EXPLOIT*
+|     	EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	5.0	https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283	*EXPLOIT*
+|     	EDB-ID:45939	5.0	https://vulners.com/exploitdb/EDB-ID:45939	*EXPLOIT*
+|     	EDB-ID:45233	5.0	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15473	5.0	https://vulners.com/cve/CVE-2018-15473
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2016-10708	5.0	https://vulners.com/cve/CVE-2016-10708
+|     	1337DAY-ID-31730	5.0	https://vulners.com/zdt/1337DAY-ID-31730	*EXPLOIT*
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF	*EXPLOIT*
+|     	EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	4.3	https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF	*EXPLOIT*
+|     	EDB-ID:40136	4.3	https://vulners.com/exploitdb/EDB-ID:40136	*EXPLOIT*
+|     	EDB-ID:40113	4.3	https://vulners.com/exploitdb/EDB-ID:40113	*EXPLOIT*
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-6210	4.3	https://vulners.com/cve/CVE-2016-6210
+|     	1337DAY-ID-25440	4.3	https://vulners.com/zdt/1337DAY-ID-25440	*EXPLOIT*
+|     	1337DAY-ID-25438	4.3	https://vulners.com/zdt/1337DAY-ID-25438	*EXPLOIT*
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|     	SSV:92581	2.1	https://vulners.com/seebug/SSV:92581	*EXPLOIT*
+|     	CVE-2016-10011	2.1	https://vulners.com/cve/CVE-2016-10011
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	PACKETSTORM:140261	0.0	https://vulners.com/packetstorm/PACKETSTORM:140261	*EXPLOIT*
+|     	PACKETSTORM:138006	0.0	https://vulners.com/packetstorm/PACKETSTORM:138006	*EXPLOIT*
+|     	PACKETSTORM:137942	0.0	https://vulners.com/packetstorm/PACKETSTORM:137942	*EXPLOIT*
+|     	MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-SSH_ENUMUSERS-	*EXPLOIT*
+|_    	1337DAY-ID-30937	0.0	https://vulners.com/zdt/1337DAY-ID-30937	*EXPLOIT*
+53/tcp   open  domain      ISC BIND 9.10.3-P4 (Ubuntu Linux)
+| vulners: 
+|   cpe:/a:isc:bind:9.10.3-p4: 
+|_    	VERACODE:32798	5.0	https://vulners.com/veracode/VERACODE:32798
+80/tcp   open  http        nginx 1.10.3 (Ubuntu)
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2011-3192  BID:49303
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.securityfocus.com/bid/49303
+|_      https://www.tenable.com/plugins/nessus/55976
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+5555/tcp open  freeciv?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP, GenericLines, GetRequest, adbConnect: 
+|     enter your name:
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|   NULL: 
+|     enter your name:
+|   SMBProgNeg: 
+|     enter your name:
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|     invalid option!
+|     [31mMember manager!
+|     edit
+|     change name
+|     gift
+|     exit
+|_    invalid option!
+7777/tcp open  cbt?
+| fingerprint-strings: 
+|   Arucer, DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, GetRequest, HTTPOptions, RPCCheck, RTSPRequest, Socks5, X11Probe: 
+|     --==[[ Spiritual Memo ]]==--
+|     Create a memo
+|     Show memo
+|     Delete memo
+|     Can't you read mate?
+|   NULL: 
+|     --==[[ Spiritual Memo ]]==--
+|     Create a memo
+|     Show memo
+|_    Delete memo
+9201/tcp open  http        BaseHTTPServer 0.3 (Python 2.7.12)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| vulners: 
+|   cpe:/a:python:python:2.7.12: 
+|     	SSV:92725	7.5	https://vulners.com/seebug/SSV:92725	*EXPLOIT*
+|     	PACKETSTORM:141350	7.5	https://vulners.com/packetstorm/PACKETSTORM:141350	*EXPLOIT*
+|     	CVE-2018-1000802	7.5	https://vulners.com/cve/CVE-2018-1000802
+|     	CVE-2017-1000158	7.5	https://vulners.com/cve/CVE-2017-1000158
+|     	CVE-2016-9063	7.5	https://vulners.com/cve/CVE-2016-9063
+|     	CVE-2016-0718	7.5	https://vulners.com/cve/CVE-2016-0718
+|     	1337DAY-ID-27146	7.5	https://vulners.com/zdt/1337DAY-ID-27146	*EXPLOIT*
+|     	CVE-2020-8492	7.1	https://vulners.com/cve/CVE-2020-8492
+|     	CVE-2016-4472	6.8	https://vulners.com/cve/CVE-2016-4472
+|     	CVE-2015-1283	6.8	https://vulners.com/cve/CVE-2015-1283
+|     	CVE-2019-9948	6.4	https://vulners.com/cve/CVE-2019-9948
+|     	CVE-2016-1000110	5.8	https://vulners.com/cve/CVE-2016-1000110
+|     	CVE-2019-9636	5.0	https://vulners.com/cve/CVE-2019-9636
+|     	CVE-2019-16056	5.0	https://vulners.com/cve/CVE-2019-16056
+|     	CVE-2019-10160	5.0	https://vulners.com/cve/CVE-2019-10160
+|     	CVE-2018-20852	5.0	https://vulners.com/cve/CVE-2018-20852
+|     	CVE-2018-14647	5.0	https://vulners.com/cve/CVE-2018-14647
+|     	CVE-2018-1061	5.0	https://vulners.com/cve/CVE-2018-1061
+|     	CVE-2018-1060	5.0	https://vulners.com/cve/CVE-2018-1060
+|     	CVE-2019-9947	4.3	https://vulners.com/cve/CVE-2019-9947
+|     	CVE-2019-9740	4.3	https://vulners.com/cve/CVE-2019-9740
+|     	CVE-2019-18348	4.3	https://vulners.com/cve/CVE-2019-18348
+|     	CVE-2019-16935	4.3	https://vulners.com/cve/CVE-2019-16935
+|     	CVE-2018-1000030	3.3	https://vulners.com/cve/CVE-2018-1000030
+|_    	CVE-2021-3426	2.7	https://vulners.com/cve/CVE-2021-3426
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-vuln-cve2015-1427: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+9998/tcp open  distinct32?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     Oops, I'm leaking! 0x7ffd8b5a1360
+|   DNSVersionBindReqTCP: 
+|     Oops, I'm leaking! 0x7ffde5c3aff0
+|   GenericLines: 
+|     Oops, I'm leaking! 0x7ffdcb294040
+|   GetRequest: 
+|     Oops, I'm leaking! 0x7ffe3180acd0
+|   HTTPOptions: 
+|     Oops, I'm leaking! 0x7fffd8b5b400
+|   Help: 
+|     Oops, I'm leaking! 0x7ffc9337e560
+|   Kerberos: 
+|     Oops, I'm leaking! 0x7fff9fc424d0
+|   NULL, teamspeak-tcpquery-ver: 
+|     Oops, I'm leaking! 0x7ffe65d12c40
+|   RPCCheck: 
+|     Oops, I'm leaking! 0x7ffe6fac7400
+|   RTSPRequest: 
+|     Oops, I'm leaking! 0x7ffdf3e79b10
+|   SMBProgNeg: 
+|     Oops, I'm leaking! 0x7fffae25ad80
+|   SSLSessionReq: 
+|     Oops, I'm leaking! 0x7ffd4ec744c0
+|   TLSSessionReq: 
+|     Oops, I'm leaking! 0x7fff6d6c27c0
+|   TerminalServerCookie: 
+|     Oops, I'm leaking! 0x7ffde0246510
+|   X11Probe: 
+|_    Oops, I'm leaking! 0x7ffc75ca4d20
+9999/tcp open  abyss?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     Oops, I'm leaking! 0x7ffe70501e20
+|   DNSVersionBindReqTCP: 
+|     Oops, I'm leaking! 0x7ffe60ecce90
+|   FourOhFourRequest: 
+|     Oops, I'm leaking! 0x7ffd7c470a00
+|   GenericLines: 
+|     Oops, I'm leaking! 0x7ffda2e1a400
+|   GetRequest, NULL: 
+|     Oops, I'm leaking! 0x7ffe06f83cf0
+|   HTTPOptions: 
+|     Oops, I'm leaking! 0x7fff31338870
+|   Help: 
+|     Oops, I'm leaking! 0x7ffd0d545f40
+|   JavaRMI: 
+|     Oops, I'm leaking! 0x7ffee66d30e0
+|   Kerberos: 
+|     Oops, I'm leaking! 0x7ffd285be0b0
+|   RPCCheck: 
+|     Oops, I'm leaking! 0x7ffc3a12b150
+|   RTSPRequest: 
+|     Oops, I'm leaking! 0x7ffdf09ef7c0
+|   SMBProgNeg: 
+|     Oops, I'm leaking! 0x7ffd83dfd010
+|   SSLSessionReq: 
+|     Oops, I'm leaking! 0x7ffef063adb0
+|   TLSSessionReq: 
+|     Oops, I'm leaking! 0x7ffd175da490
+|   TerminalServerCookie: 
+|_    Oops, I'm leaking! 0x7fffdafd6700
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5555-TCP:V=7.92%I=7%D=7/14%Time=62CFBC79%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,11,"enter\x20your\x20name:\n")%r(GenericLines,63,"enter\x20your\x20n
+SF:ame:\n\x1b\[31mMember\x20manager!\x1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.
+SF:\x20ban\n4\.\x20change\x20name\n5\.\x20get\x20gift\n6\.\x20exit\n")%r(D
+SF:NSVersionBindReqTCP,63,"enter\x20your\x20name:\n\x1b\[31mMember\x20mana
+SF:ger!\x1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.\x20ban\n4\.\x20change\x20nam
+SF:e\n5\.\x20get\x20gift\n6\.\x20exit\n")%r(SMBProgNeg,9D1,"enter\x20your\
+SF:x20name:\n\x1b\[31mMember\x20manager!\x1b\[0m\n1\.\x20add\n2\.\x20edit\
+SF:n3\.\x20ban\n4\.\x20change\x20name\n5\.\x20get\x20gift\n6\.\x20exit\nin
+SF:valid\x20option!\n\x1b\[31mMember\x20manager!\x1b\[0m\n1\.\x20add\n2\.\
+SF:x20edit\n3\.\x20ban\n4\.\x20change\x20name\n5\.\x20get\x20gift\n6\.\x20
+SF:exit\ninvalid\x20option!\n\x1b\[31mMember\x20manager!\x1b\[0m\n1\.\x20a
+SF:dd\n2\.\x20edit\n3\.\x20ban\n4\.\x20change\x20name\n5\.\x20get\x20gift\
+SF:n6\.\x20exit\ninvalid\x20option!\n\x1b\[31mMember\x20manager!\x1b\[0m\n
+SF:1\.\x20add\n2\.\x20edit\n3\.\x20ban\n4\.\x20change\x20name\n5\.\x20get\
+SF:x20gift\n6\.\x20exit\ninvalid\x20option!\n\x1b\[31mMember\x20manager!\x
+SF:1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.\x20ban\n4\.\x20change\x20name\n5\.
+SF:\x20get\x20gift\n6\.\x20exit\ninvalid\x20option!\n\x1b\[31mMember\x20ma
+SF:nager!\x1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.\x20ban\n4\.\x20change\x20n
+SF:ame\n5\.\x20get\x20gift\n6\.\x20exit\ninvalid\x20option!\n\x1b\[31mMemb
+SF:er\x20manager!\x1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.\x20ban\n4\.\x20cha
+SF:nge\x20name\n5\.\x20get\x20gift\n6\.\x20exit\ninvalid\x20option!\n\x1b\
+SF:[31mMember\x20manager!\x1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.\x20ban\n4\
+SF:.\x20change\x20name\n5\.\x20get\x20gift\n6\.\x20exit\ninvalid\x20option
+SF:!\n\x1b\[31mMember\x20manager!\x1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.\x2
+SF:0ban\n4\.\x20change\x20name\n5\.\x20get\x20gift\n6\.\x20exit\ninvalid\x
+SF:20option!\n\x1b")%r(adbConnect,63,"enter\x20your\x20name:\n\x1b\[31mMem
+SF:ber\x20manager!\x1b\[0m\n1\.\x20add\n2\.\x20edit\n3\.\x20ban\n4\.\x20ch
+SF:ange\x20name\n5\.\x20get\x20gift\n6\.\x20exit\n")%r(GetRequest,63,"ente
+SF:r\x20your\x20name:\n\x1b\[31mMember\x20manager!\x1b\[0m\n1\.\x20add\n2\
+SF:.\x20edit\n3\.\x20ban\n4\.\x20change\x20name\n5\.\x20get\x20gift\n6\.\x
+SF:20exit\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7777-TCP:V=7.92%I=7%D=7/14%Time=62CFBC79%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,5D,"\n--==\[\[\x20Spiritual\x20Memo\x20\]\]==--\n\n\[1\]\x20Create\x
+SF:20a\x20memo\n\[2\]\x20Show\x20memo\n\[3\]\x20Delete\x20memo\n\[4\]\x20T
+SF:ap\x20out\n>\x20")%r(X11Probe,71,"\n--==\[\[\x20Spiritual\x20Memo\x20\]
+SF:\]==--\n\n\[1\]\x20Create\x20a\x20memo\n\[2\]\x20Show\x20memo\n\[3\]\x2
+SF:0Delete\x20memo\n\[4\]\x20Tap\x20out\n>\x20Can't\x20you\x20read\x20mate
+SF:\?")%r(Socks5,71,"\n--==\[\[\x20Spiritual\x20Memo\x20\]\]==--\n\n\[1\]\
+SF:x20Create\x20a\x20memo\n\[2\]\x20Show\x20memo\n\[3\]\x20Delete\x20memo\
+SF:n\[4\]\x20Tap\x20out\n>\x20Can't\x20you\x20read\x20mate\?")%r(Arucer,71
+SF:,"\n--==\[\[\x20Spiritual\x20Memo\x20\]\]==--\n\n\[1\]\x20Create\x20a\x
+SF:20memo\n\[2\]\x20Show\x20memo\n\[3\]\x20Delete\x20memo\n\[4\]\x20Tap\x2
+SF:0out\n>\x20Can't\x20you\x20read\x20mate\?")%r(GenericLines,71,"\n--==\[
+SF:\[\x20Spiritual\x20Memo\x20\]\]==--\n\n\[1\]\x20Create\x20a\x20memo\n\[
+SF:2\]\x20Show\x20memo\n\[3\]\x20Delete\x20memo\n\[4\]\x20Tap\x20out\n>\x2
+SF:0Can't\x20you\x20read\x20mate\?")%r(GetRequest,71,"\n--==\[\[\x20Spirit
+SF:ual\x20Memo\x20\]\]==--\n\n\[1\]\x20Create\x20a\x20memo\n\[2\]\x20Show\
+SF:x20memo\n\[3\]\x20Delete\x20memo\n\[4\]\x20Tap\x20out\n>\x20Can't\x20yo
+SF:u\x20read\x20mate\?")%r(HTTPOptions,71,"\n--==\[\[\x20Spiritual\x20Memo
+SF:\x20\]\]==--\n\n\[1\]\x20Create\x20a\x20memo\n\[2\]\x20Show\x20memo\n\[
+SF:3\]\x20Delete\x20memo\n\[4\]\x20Tap\x20out\n>\x20Can't\x20you\x20read\x
+SF:20mate\?")%r(RTSPRequest,71,"\n--==\[\[\x20Spiritual\x20Memo\x20\]\]==-
+SF:-\n\n\[1\]\x20Create\x20a\x20memo\n\[2\]\x20Show\x20memo\n\[3\]\x20Dele
+SF:te\x20memo\n\[4\]\x20Tap\x20out\n>\x20Can't\x20you\x20read\x20mate\?")%
+SF:r(RPCCheck,71,"\n--==\[\[\x20Spiritual\x20Memo\x20\]\]==--\n\n\[1\]\x20
+SF:Create\x20a\x20memo\n\[2\]\x20Show\x20memo\n\[3\]\x20Delete\x20memo\n\[
+SF:4\]\x20Tap\x20out\n>\x20Can't\x20you\x20read\x20mate\?")%r(DNSVersionBi
+SF:ndReqTCP,71,"\n--==\[\[\x20Spiritual\x20Memo\x20\]\]==--\n\n\[1\]\x20Cr
+SF:eate\x20a\x20memo\n\[2\]\x20Show\x20memo\n\[3\]\x20Delete\x20memo\n\[4\
+SF:]\x20Tap\x20out\n>\x20Can't\x20you\x20read\x20mate\?")%r(DNSStatusReque
+SF:stTCP,71,"\n--==\[\[\x20Spiritual\x20Memo\x20\]\]==--\n\n\[1\]\x20Creat
+SF:e\x20a\x20memo\n\[2\]\x20Show\x20memo\n\[3\]\x20Delete\x20memo\n\[4\]\x
+SF:20Tap\x20out\n>\x20Can't\x20you\x20read\x20mate\?");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9998-TCP:V=7.92%I=7%D=7/14%Time=62CFBC79%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,3A,"Oops,\x20I'm\x20leaking!\x200x7ffe65d12c40\nPwn\x20me\x20\xc2\xa
+SF:f\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(teamspeak-tcpquery-ver,3A
+SF:,"Oops,\x20I'm\x20leaking!\x200x7ffe65d12c40\nPwn\x20me\x20\xc2\xaf\\_\
+SF:(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(GenericLines,3A,"Oops,\x20I'm\
+SF:x20leaking!\x200x7ffdcb294040\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)
+SF:_/\xc2\xaf\x20\n>\x20")%r(GetRequest,3A,"Oops,\x20I'm\x20leaking!\x200x
+SF:7ffe3180acd0\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>
+SF:\x20")%r(HTTPOptions,3A,"Oops,\x20I'm\x20leaking!\x200x7fffd8b5b400\nPw
+SF:n\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(RTSPReq
+SF:uest,3A,"Oops,\x20I'm\x20leaking!\x200x7ffdf3e79b10\nPwn\x20me\x20\xc2\
+SF:xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(RPCCheck,3A,"Oops,\x20I
+SF:'m\x20leaking!\x200x7ffe6fac7400\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x8
+SF:4\)_/\xc2\xaf\x20\n>\x20")%r(DNSVersionBindReqTCP,3A,"Oops,\x20I'm\x20l
+SF:eaking!\x200x7ffde5c3aff0\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\x
+SF:c2\xaf\x20\n>\x20")%r(DNSStatusRequestTCP,3A,"Oops,\x20I'm\x20leaking!\
+SF:x200x7ffd8b5a1360\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x
+SF:20\n>\x20")%r(Help,3A,"Oops,\x20I'm\x20leaking!\x200x7ffc9337e560\nPwn\
+SF:x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(SSLSessio
+SF:nReq,3A,"Oops,\x20I'm\x20leaking!\x200x7ffd4ec744c0\nPwn\x20me\x20\xc2\
+SF:xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(TerminalServerCookie,3A
+SF:,"Oops,\x20I'm\x20leaking!\x200x7ffde0246510\nPwn\x20me\x20\xc2\xaf\\_\
+SF:(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(TLSSessionReq,3A,"Oops,\x20I'm
+SF:\x20leaking!\x200x7fff6d6c27c0\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\
+SF:)_/\xc2\xaf\x20\n>\x20")%r(Kerberos,3A,"Oops,\x20I'm\x20leaking!\x200x7
+SF:fff9fc424d0\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\
+SF:x20")%r(SMBProgNeg,3A,"Oops,\x20I'm\x20leaking!\x200x7fffae25ad80\nPwn\
+SF:x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(X11Probe,
+SF:3A,"Oops,\x20I'm\x20leaking!\x200x7ffc75ca4d20\nPwn\x20me\x20\xc2\xaf\\
+SF:_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9999-TCP:V=7.92%I=7%D=7/14%Time=62CFBC79%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,3A,"Oops,\x20I'm\x20leaking!\x200x7ffe06f83cf0\nPwn\x20me\x20\xc2\xa
+SF:f\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(GetRequest,3A,"Oops,\x20I
+SF:'m\x20leaking!\x200x7ffe06f83cf0\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x8
+SF:4\)_/\xc2\xaf\x20\n>\x20")%r(HTTPOptions,3A,"Oops,\x20I'm\x20leaking!\x
+SF:200x7fff31338870\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x2
+SF:0\n>\x20")%r(FourOhFourRequest,3A,"Oops,\x20I'm\x20leaking!\x200x7ffd7c
+SF:470a00\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")
+SF:%r(JavaRMI,3A,"Oops,\x20I'm\x20leaking!\x200x7ffee66d30e0\nPwn\x20me\x2
+SF:0\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(GenericLines,3A,"
+SF:Oops,\x20I'm\x20leaking!\x200x7ffda2e1a400\nPwn\x20me\x20\xc2\xaf\\_\(\
+SF:xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(RTSPRequest,3A,"Oops,\x20I'm\x20
+SF:leaking!\x200x7ffdf09ef7c0\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\
+SF:xc2\xaf\x20\n>\x20")%r(RPCCheck,3A,"Oops,\x20I'm\x20leaking!\x200x7ffc3
+SF:a12b150\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20"
+SF:)%r(DNSVersionBindReqTCP,3A,"Oops,\x20I'm\x20leaking!\x200x7ffe60ecce90
+SF:\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(DNS
+SF:StatusRequestTCP,3A,"Oops,\x20I'm\x20leaking!\x200x7ffe70501e20\nPwn\x2
+SF:0me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(Help,3A,"Oo
+SF:ps,\x20I'm\x20leaking!\x200x7ffd0d545f40\nPwn\x20me\x20\xc2\xaf\\_\(\xe
+SF:3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(SSLSessionReq,3A,"Oops,\x20I'm\x20
+SF:leaking!\x200x7ffef063adb0\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\
+SF:xc2\xaf\x20\n>\x20")%r(TerminalServerCookie,3A,"Oops,\x20I'm\x20leaking
+SF:!\x200x7fffdafd6700\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf
+SF:\x20\n>\x20")%r(TLSSessionReq,3A,"Oops,\x20I'm\x20leaking!\x200x7ffd175
+SF:da490\nPwn\x20me\x20\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%
+SF:r(Kerberos,3A,"Oops,\x20I'm\x20leaking!\x200x7ffd285be0b0\nPwn\x20me\x2
+SF:0\xc2\xaf\\_\(\xe3\x83\x84\)_/\xc2\xaf\x20\n>\x20")%r(SMBProgNeg,3A,"Oo
+SF:ps,\x20I'm\x20leaking!\x200x7ffd83dfd010\nPwn\x20me\x20\xc2\xaf\\_\(\xe
+SF:3\x83\x84\)_/\xc2\xaf\x20\n>\x20");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jul 14 15:25:10 2022 -- 1 IP address (1 host up) scanned in 2159.43 seconds

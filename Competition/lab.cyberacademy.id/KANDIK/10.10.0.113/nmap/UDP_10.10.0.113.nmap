@@ -1,0 +1,8 @@
+# Nmap 7.92 scan initiated Sat Jul  9 17:13:56 2022 as: /usr/bin/nmap -sU --max-retries 1 --open --open -oN nmap/UDP_10.10.0.113.nmap --system-dns --stats-every 3s 10.10.0.113
+Warning: 10.10.0.113 giving up on port because retransmission cap hit (1).
+Nmap scan report for 10.10.0.113
+Host is up (0.076s latency).
+All 1000 scanned ports on 10.10.0.113 are in ignored states.
+Not shown: 899 open|filtered udp ports (no-response), 101 closed udp ports (port-unreach)
+
+# Nmap done at Sat Jul  9 17:15:32 2022 -- 1 IP address (1 host up) scanned in 96.12 seconds

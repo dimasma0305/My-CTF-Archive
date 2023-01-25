@@ -1,0 +1,16 @@
+[2K                        [Status: 302, Size: 13897, Words: 2637, Lines: 421, Duration: 119ms][0m
+[2Kajax.php                [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 141ms][0m
+[2Kassets                  [Status: 301, Size: 178, Words: 6, Lines: 8, Duration: 154ms][0m
+[2Kcourses.php             [Status: 200, Size: 5042, Words: 266, Lines: 171, Duration: 85ms][0m
+[2Kdatabase                [Status: 301, Size: 178, Words: 6, Lines: 8, Duration: 90ms][0m
+[2Kdb_connect.php          [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 137ms][0m
+[2Kdownload.php            [Status: 200, Size: 17, Words: 17, Lines: 2, Duration: 87ms][0m
+[2Kevents.php              [Status: 500, Size: 1193, Words: 51, Lines: 43, Duration: 121ms][0m
+[2Kfaculty.php             [Status: 200, Size: 8532, Words: 320, Lines: 219, Duration: 73ms][0m
+[2Kheader.php              [Status: 200, Size: 2691, Words: 155, Lines: 48, Duration: 166ms][0m
+[2Khome.php                [Status: 200, Size: 2995, Words: 1006, Lines: 106, Duration: 116ms][0m
+[2Kindex.php               [Status: 302, Size: 13897, Words: 2637, Lines: 421, Duration: 84ms][0m
+[2Kindex.php               [Status: 302, Size: 13897, Words: 2637, Lines: 421, Duration: 96ms][0m
+[2Klogin.php               [Status: 200, Size: 5618, Words: 376, Lines: 176, Duration: 95ms][0m
+[2Kschedule.php            [Status: 200, Size: 5553, Words: 640, Lines: 202, Duration: 82ms][0m
+[2Kusers.php               [Status: 200, Size: 1593, Words: 52, Lines: 71, Duration: 134ms][0m

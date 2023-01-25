@@ -1,0 +1,12 @@
+# Nmap 7.92 scan initiated Tue Nov 22 15:29:00 2022 as: /usr/bin/nmap -p- --max-retries 1 --max-rate 500 --max-scan-delay 20 -T4 -v --open -oN nmap/Full_192.168.57.206.nmap --system-dns --stats-every 3s 192.168.57.206
+Nmap scan report for 192.168.57.206
+Host is up (0.069s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2222/tcp open  EtherNetIP-1
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Nov 22 15:31:12 2022 -- 1 IP address (1 host up) scanned in 131.67 seconds

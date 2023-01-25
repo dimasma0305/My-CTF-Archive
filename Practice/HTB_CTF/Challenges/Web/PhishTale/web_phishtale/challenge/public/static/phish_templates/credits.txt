@@ -1,0 +1,3 @@
+The phishing template files for the challenge were collected from https://github.com/curtbraz/PhishAPI
+
+All script and PHP tags are removed from the template files, and redundant HTML and JS files are deleted.

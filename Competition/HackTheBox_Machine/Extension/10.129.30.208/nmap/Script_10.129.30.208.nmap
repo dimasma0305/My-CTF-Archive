@@ -1,0 +1,17 @@
+# Nmap 7.92 scan initiated Sun Jul 17 07:13:01 2022 as: /usr/bin/nmap -sCV -p22,80 --open -oN nmap/Script_10.129.30.208.nmap --system-dns --stats-every 2s 10.129.30.208
+Nmap scan report for 10.129.30.208
+Host is up (0.31s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 82:21:e2:a5:82:4d:df:3f:99:db:3e:d9:b3:26:52:86 (RSA)
+|   256 91:3a:b2:92:2b:63:7d:91:f1:58:2b:1b:54:f9:70:3c (ECDSA)
+|_  256 65:20:39:2b:a7:3b:33:e5:ed:49:a9:ac:ea:01:bd:37 (ED25519)
+80/tcp open  http    nginx 1.14.0 (Ubuntu)
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: snippet.htb
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 17 07:13:20 2022 -- 1 IP address (1 host up) scanned in 19.23 seconds

@@ -1,0 +1,10 @@
+{
+    "keys": [
+        {
+            "alg": "RS256",
+            "x5c": [
+                "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnt/qk3LukRjYTHITOZo\nD3rH9ItgBxwQEJNZIADpvN1rHR7x7F25w6HyFzGHOP42d9Xi9MpO9/CI5rRh7Hp8\n+3+SQzOx5eOIdssPuGSS4bvtPwHbC+YOKiizSP1nBbMULvDGf/w7fVjRv/H0jqw1\nm3FzygUoBaUu3CpSyl+chqLaLI68JAA4kzCdUSxPbwARrq5tFO4DjdmXsJBa5QDs\n6bFAYCpLqDHAOsbXCRRu5z06CZqsGyOCYsLy0BJcFuYVlXV8KUWDhNJj/IvUaSf8\nBEbC5/oKWPlhJxQ7hBbzI/+YFmERA4x+aotqX0eQol6EkoE5k60+5/CUJK7WwHYx\ncwIDAQAB"
+            ]
+        }
+    ]
+}

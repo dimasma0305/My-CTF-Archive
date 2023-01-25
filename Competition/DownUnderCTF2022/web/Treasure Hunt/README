@@ -1,0 +1,2 @@
+john jwt.txt --wordlist=/usr/share/wordlists/rockyou.txt --format=HMAC-SHA256
+pass: onepiece

@@ -1,0 +1,1 @@
+flask-unsign --sign --cookie "{'admin': 1, 'uid': 'asd'}" --secret 84787d274d6b7e03d94ce2dcbfe85bf1

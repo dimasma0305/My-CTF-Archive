@@ -1,0 +1,110 @@
+
+[0;33mRunning all scans on [0m10.10.0.107
+[0m
+[0;32mHost is likely running Linux
+
+
+[0;32m---------------------Starting Port Scan-----------------------
+[0m
+[0K
+[0K
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+
+
+[0;32m---------------------Starting Script Scan-----------------------
+[0m
+[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     libssh 0.8.1 (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 34:f3:32:c6:e8:50:23:6a:67:23:bd:58:a3:88:e3:a6 (RSA)
+
+
+
+
+[0;32m---------------------Starting Full Scan------------------------
+[0m
+[0K
+[0K
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+
+
+[0;33mNo new ports
+[0m
+
+
+
+[0;32m----------------------Starting UDP Scan------------------------
+[0m
+[0K
+[0K
+
+
+[0;33mNo UDP ports are open
+[0m
+
+
+
+[0;32m---------------------Starting Vulns Scan-----------------------
+[0m
+[0;33mRunning CVE scan on all ports
+[0m
+[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     libssh 0.8.1 (protocol 2.0)
+| vulners: 
+|   cpe:/a:libssh:libssh:0.8.1: 
+|     	CVE-2019-14889	9.3	https://vulners.com/cve/CVE-2019-14889
+|     	SAINT:BA3EFBBDFCB3CC076D38325DCC8DD31D	6.4	https://vulners.com/saint/SAINT:BA3EFBBDFCB3CC076D38325DCC8DD31D	*EXPLOIT*
+|     	SAINT:B681EA11D39C075AFBC35E972CCFD4F4	6.4	https://vulners.com/saint/SAINT:B681EA11D39C075AFBC35E972CCFD4F4	*EXPLOIT*
+|     	SAINT:09E7CC2595E83CD15F6B2622D66DE4D4	6.4	https://vulners.com/saint/SAINT:09E7CC2595E83CD15F6B2622D66DE4D4	*EXPLOIT*
+|     	PACKETSTORM:151477	6.4	https://vulners.com/packetstorm/PACKETSTORM:151477	*EXPLOIT*
+|     	PACKETSTORM:149865	6.4	https://vulners.com/packetstorm/PACKETSTORM:149865	*EXPLOIT*
+|     	1337DAY-ID-31367	6.4	https://vulners.com/zdt/1337DAY-ID-31367	*EXPLOIT*
+|_    	MSF:AUXILIARY-SCANNER-SSH-LIBSSH_AUTH_BYPASS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-LIBSSH_AUTH_BYPASS-	*EXPLOIT*
+
+
+
+[0;33mRunning Vuln scan on all ports
+[0;33mThis may take a while, depending on the number of detected services..
+[0m
+[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     libssh 0.8.1 (protocol 2.0)
+| vulners: 
+|   cpe:/a:libssh:libssh:0.8.1: 
+|     	CVE-2019-14889	9.3	https://vulners.com/cve/CVE-2019-14889
+|     	SAINT:BA3EFBBDFCB3CC076D38325DCC8DD31D	6.4	https://vulners.com/saint/SAINT:BA3EFBBDFCB3CC076D38325DCC8DD31D	*EXPLOIT*
+|     	SAINT:B681EA11D39C075AFBC35E972CCFD4F4	6.4	https://vulners.com/saint/SAINT:B681EA11D39C075AFBC35E972CCFD4F4	*EXPLOIT*
+|     	SAINT:09E7CC2595E83CD15F6B2622D66DE4D4	6.4	https://vulners.com/saint/SAINT:09E7CC2595E83CD15F6B2622D66DE4D4	*EXPLOIT*
+|     	PACKETSTORM:151477	6.4	https://vulners.com/packetstorm/PACKETSTORM:151477	*EXPLOIT*
+|     	PACKETSTORM:149865	6.4	https://vulners.com/packetstorm/PACKETSTORM:149865	*EXPLOIT*
+|     	CVE-2018-10933	6.4	https://vulners.com/cve/CVE-2018-10933
+|     	1337DAY-ID-31367	6.4	https://vulners.com/zdt/1337DAY-ID-31367	*EXPLOIT*
+|     	CVE-2020-1730	5.0	https://vulners.com/cve/CVE-2020-1730
+|_    	MSF:AUXILIARY-SCANNER-SSH-LIBSSH_AUTH_BYPASS-	0.0	https://vulners.com/metasploit/MSF:AUXILIARY-SCANNER-SSH-LIBSSH_AUTH_BYPASS-	*EXPLOIT*
+
+
+
+
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+
+
+
+[0;33mNo Recon Recommendations found...
+[0m
+
+
+[0;32m---------------------Finished all scans------------------------
+[0m
+
+[0;33mCompleted in 0 seconds
+[0m

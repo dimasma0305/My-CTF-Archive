@@ -1,0 +1,32 @@
+                                            </tr>
+                                                                                                                <tr>
+                                        <th scope="col">&nbsp;</th>
+                                        <th scope="col">&nbsp;</th>
+                                        <th scope="col">&nbsp;</th>
+                                        <th scope="col">$3,00</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <div class="row">
+                            <p>Credit card data (number and CVV):</p>
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="1111-1111-1111-1111">
+                            </div>
+                            <div class="col-2">
+                                <input type="text" class="form-control" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-footer text-right">
+                        <a href="#" class="btn btn-success my-3" onclick="alert('Your payment was successfully received');">Pay<i class="ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

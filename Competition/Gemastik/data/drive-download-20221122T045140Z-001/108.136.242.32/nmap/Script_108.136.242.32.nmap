@@ -1,0 +1,43 @@
+# Nmap 7.92 scan initiated Wed Nov 23 10:59:04 2022 as: /usr/bin/nmap -Pn -sCV -p22,80,90,1000,1500,3306 --open -oN nmap/Script_108.136.242.32.nmap --system-dns --stats-every 2s 108.136.242.32
+Nmap scan report for ec2-108-136-242-32.ap-southeast-3.compute.amazonaws.com (108.136.242.32)
+Host is up (0.019s latency).
+
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 58:8d:ea:80:ad:6d:f4:05:38:a8:57:30:39:6f:f9:2d (ECDSA)
+|_  256 68:1d:78:ee:16:61:f1:f5:ba:74:a4:56:76:86:29:61 (ED25519)
+80/tcp   open  http     nginx 1.18.0 (Ubuntu)
+|_http-title: Web Kegabutan
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+90/tcp   open  http     nginx 1.18.0 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+1000/tcp open  cadlock?
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     Nomor Favorit Anda: 
+|_    Wrong format
+1500/tcp open  http     Werkzeug httpd 1.0.1 (Python 2.7.18)
+|_http-title: Kalkulator
+|_http-server-header: Werkzeug/1.0.1 Python/2.7.18
+3306/tcp open  mysql    MariaDB (unauthorized)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1000-TCP:V=7.92%I=7%D=11/23%Time=637D8C7F%P=x86_64-pc-linux-gnu%r(G
+SF:enericLines,22,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(Ge
+SF:tRequest,22,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(HTTPO
+SF:ptions,22,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(RTSPReq
+SF:uest,22,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(Help,22,"
+SF:Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(SSLSessionReq,22,"
+SF:Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(TerminalServerCook
+SF:ie,22,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(TLSSessionR
+SF:eq,22,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(Kerberos,22
+SF:,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(FourOhFourReques
+SF:t,22,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(LPDString,22
+SF:,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(LDAPSearchReq,22
+SF:,"Nomor\x20Favorit\x20Anda:\x20\nWrong\x20format\n")%r(SIPOptions,22,"N
+SF:omor\x20Favorit\x20Anda:\x20\nWrong\x20format\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 23 11:00:34 2022 -- 1 IP address (1 host up) scanned in 89.99 seconds

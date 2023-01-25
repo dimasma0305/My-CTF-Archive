@@ -1,0 +1,6 @@
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://10.10.0.101:80" | tee "recon/nikto_10.10.0.101_80.txt"

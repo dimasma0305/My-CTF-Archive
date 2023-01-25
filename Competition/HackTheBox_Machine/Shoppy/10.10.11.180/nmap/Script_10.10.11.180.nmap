@@ -1,0 +1,17 @@
+# Nmap 7.92 scan initiated Fri Oct 14 19:46:14 2022 as: /usr/bin/nmap -sCV -p22,80 --open -oN nmap/Script_10.10.11.180.nmap --system-dns --stats-every 2s 10.10.11.180
+Nmap scan report for 10.10.11.180
+Host is up (0.20s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 9e:5e:83:51:d9:9f:89:ea:47:1a:12:eb:81:f9:22:c0 (RSA)
+|   256 58:57:ee:eb:06:50:03:7c:84:63:d7:a3:41:5b:1a:d5 (ECDSA)
+|_  256 3e:9d:0a:42:90:44:38:60:b3:b6:2c:e9:bd:9a:67:54 (ED25519)
+80/tcp open  http    nginx 1.23.1
+|_http-title: Did not follow redirect to http://shoppy.htb
+|_http-server-header: nginx/1.23.1
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct 14 19:46:24 2022 -- 1 IP address (1 host up) scanned in 10.47 seconds

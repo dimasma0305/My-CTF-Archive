@@ -1,0 +1,19 @@
+# Nmap 7.92 scan initiated Fri Aug 19 23:22:22 2022 as: /usr/bin/nmap -sCV -p22,80 --open -oN nmap/Script_10.10.0.115.nmap --system-dns --stats-every 2s 10.10.0.115
+Nmap scan report for 10.10.0.115
+Host is up (0.077s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 5d:ca:d6:84:ae:db:0f:e3:4b:cb:5b:5c:ae:49:50:96 (RSA)
+|   256 3c:05:4e:f2:6b:6b:19:cb:79:96:94:de:2e:32:3b:6b (ECDSA)
+|_  256 cf:1a:2e:b4:1a:bf:8c:bc:91:ca:99:b7:4d:1b:ba:31 (ED25519)
+80/tcp open  http    Apache httpd 2.4.54 ((Unix))
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.54 (Unix)
+|_http-title: Senjata Tradisional Bangka Belitung
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 19 23:22:35 2022 -- 1 IP address (1 host up) scanned in 13.22 seconds

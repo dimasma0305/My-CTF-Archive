@@ -1,0 +1,8 @@
+version: '3'
+services:
+    web_fetch_your_way:
+        build: .
+        container_name: web_fetch_your_way
+        restart: always
+        ports:
+            - "8894:5000"

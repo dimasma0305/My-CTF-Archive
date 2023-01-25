@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Thu Jul 14 14:39:18 2022 as: /usr/bin/nmap -sCV -p9201 --open -oN nmap/Full_Extra_10.13.37.10.nmap --system-dns --stats-every 2s 10.13.37.10
+Nmap scan report for 10.13.37.10
+Host is up (0.45s latency).
+
+PORT     STATE SERVICE VERSION
+9201/tcp open  http    BaseHTTPServer 0.3 (Python 2.7.12)
+|_http-title: Site doesn't have a title (application/json).
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jul 14 14:39:38 2022 -- 1 IP address (1 host up) scanned in 20.19 seconds

@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Wed Aug 31 17:49:24 2022 as: /bin/nmap -Pn -T4 --max-retries 1 --max-scan-delay 20 --open -oN nmap/Port_shared.htb.nmap --system-dns --stats-every 1s shared.htb
+Nmap scan report for shared.htb (10.10.11.172)
+Host is up (0.31s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Wed Aug 31 17:49:27 2022 -- 1 IP address (1 host up) scanned in 2.38 seconds

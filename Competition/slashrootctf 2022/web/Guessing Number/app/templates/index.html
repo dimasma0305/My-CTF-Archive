@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Guessing Number</title>
+</head>
+<body class="space-y-4">
+    <h1 class="text-2xl text-green-600 text-center"> Welcome to Guessing Number!</h1>    
+    {% if data['result_guess'] != None: %}
+        {% if data['result_guess'] == 'Wrong!': %}
+            <h1 class="text-xl text-red-300 text-center">{{ data['result_guess'] }}</h1>
+        {% else: %}
+            <h1 class="text-xl text-green-300 text-center">{{ data['result_guess'] }}</h1>
+        {% endif %}
+    {% endif %}
+    
+    <form action="/" class="flex flex-col w-full gap-5" method="post">
+        <div class="m-auto">
+            <label for="number_guess">Guess Number</label>
+            <input type="number" class="border-2 focus:outline-none px-2 py-1" name='number_guess' id="number_guess" min=0>
+            <button type="submit"  class="ring-slate-300 ring-1 px-3 py-1 active:bg-slate-400 active:text-white">Guess</button>
+        </div>        
+    </form>
+    <h5 class="text-md text-center  text-yellow-500"> 100 correct will get the flag!</h5>
+    <h5 class="text-sm text-center  text-green-500"> Your skor, {{data['skor']}} </h5>
+</body>
+</html>

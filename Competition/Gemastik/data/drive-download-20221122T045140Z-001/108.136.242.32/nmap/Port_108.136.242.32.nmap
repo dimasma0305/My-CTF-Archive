@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Wed Nov 23 10:59:02 2022 as: /usr/bin/nmap -Pn -T4 --max-retries 1 --max-scan-delay 20 --open -oN nmap/Port_108.136.242.32.nmap --system-dns --stats-every 1s 108.136.242.32
+Nmap scan report for ec2-108-136-242-32.ap-southeast-3.compute.amazonaws.com (108.136.242.32)
+Host is up (0.028s latency).
+Not shown: 992 closed tcp ports (reset), 2 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+90/tcp   open  dnsix
+1000/tcp open  cadlock
+1500/tcp open  vlsi-lm
+3306/tcp open  mysql
+
+# Nmap done at Wed Nov 23 10:59:04 2022 -- 1 IP address (1 host up) scanned in 1.53 seconds

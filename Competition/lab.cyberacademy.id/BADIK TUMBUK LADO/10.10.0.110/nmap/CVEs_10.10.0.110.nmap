@@ -1,0 +1,9 @@
+# Nmap 7.92 scan initiated Fri Aug  5 14:07:58 2022 as: /usr/bin/nmap -sV --script vulners --script-args mincvss=7.0 -p4712 --open -oN nmap/CVEs_10.10.0.110.nmap --system-dns --stats-every 3s 10.10.0.110
+Nmap scan report for 10.10.0.110
+Host is up (0.087s latency).
+
+PORT     STATE SERVICE VERSION
+4712/tcp open  unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug  5 14:10:47 2022 -- 1 IP address (1 host up) scanned in 169.23 seconds

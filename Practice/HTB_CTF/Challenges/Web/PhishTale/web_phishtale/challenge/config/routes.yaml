@@ -1,0 +1,18 @@
+index:
+   path: /
+   controller: App\Controller\DefaultController::index
+login:
+   path: /login
+   controller: App\Controller\LoginController::login
+adminIndex:
+   path: /admin/
+   controller: App\Controller\AdminController::adminIndex
+exportTemplate:
+   path: /admin/export
+   controller: App\Controller\AdminController::exportTemplate
+logout:
+   path: /logout
+   controller: App\Controller\AdminController::logout
+debug:
+   path: /debug
+   controller: App\Controller\DefaultController::showSource

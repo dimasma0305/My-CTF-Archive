@@ -1,0 +1,153 @@
+
+[0;33mRunning all scans on [0m192.168.57.206
+[0m
+[0;33mNo ping detected.. Will not use ping scans!
+[0m
+[0m
+[0;32mHost is likely running Unknown OS!
+
+
+[0;32m---------------------Starting Port Scan-----------------------
+[0m
+[0K
+[0K
+PORT     STATE SERVICE
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2222/tcp open  EtherNetIP-1
+
+
+
+[0;32m---------------------Starting Script Scan-----------------------
+[0m
+[0K
+[0K
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 8d:4b:8b:c2:97:a8:36:13:9b:1a:53:8d:5e:40:a1:63 (ECDSA)
+|_  256 9b:fe:99:3e:b2:dd:50:2d:c8:c1:e2:2e:76:e5:20:d4 (ED25519)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 4.6.3 (workgroup: WORKGROUP)
+2222/tcp open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 8d:4b:8b:c2:97:a8:36:13:9b:1a:53:8d:5e:40:a1:63 (ECDSA)
+|_  256 9b:fe:99:3e:b2:dd:50:2d:c8:c1:e2:2e:76:e5:20:d4 (ED25519)
+Service Info: Host: IP-192-168-56-126; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2022-11-22T07:30:21
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.6.3)
+|   Computer name: \x00
+|   NetBIOS computer name: IP-192-168-56-126\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2022-11-22T07:30:20+00:00
+|_clock-skew: mean: 1m25s, deviation: 0s, median: 1m24s
+
+
+
+
+[0;32m---------------------Starting Full Scan------------------------
+[0m
+[0K
+[0K
+PORT     STATE SERVICE
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2222/tcp open  EtherNetIP-1
+
+
+
+[0;33mNo new ports
+[0m
+
+
+
+[0;32m----------------------Starting UDP Scan------------------------
+[0m
+[0K
+[0K
+
+
+[0;33mNo UDP ports are open
+[0m
+
+
+
+[0;32m---------------------Starting Vulns Scan-----------------------
+[0m
+[0;33mRunning CVE scan on all ports
+[0m
+[0K
+[0K
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+2222/tcp open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+Service Info: Host: IP-192-168-56-126; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+
+[0;33mRunning Vuln scan on all ports
+[0;33mThis may take a while, depending on the number of detected services..
+[0m
+[0K
+[0K
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+2222/tcp open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+Service Info: Host: IP-192-168-56-126; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+
+
+
+
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mSMB Recon:
+[0m
+smbmap -H "192.168.57.206" | tee "recon/smbmap_192.168.57.206.txt"
+smbclient -L "//192.168.57.206/" -U "guest"% | tee "recon/smbclient_192.168.57.206.txt"
+
+
+
+
+[0;31mMissing tools: [0msmbmap
+
+[0;31mYou can install with:
+[0;33msudo apt install smbmap -y
+[0m
+
+[0;33m
+Which commands would you like to run?[0m
+All (Default), smbclient, Skip <!>
+
+[2KRunning Default in (30)s: 

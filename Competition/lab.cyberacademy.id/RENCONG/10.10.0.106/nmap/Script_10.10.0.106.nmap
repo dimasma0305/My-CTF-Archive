@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Sat Jul  9 10:21:07 2022 as: /usr/bin/nmap -sCV -p22 --open -oN nmap/Script_10.10.0.106.nmap --system-dns --stats-every 2s 10.10.0.106
+Nmap scan report for 10.10.0.106
+Host is up (0.097s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 6b:a1:fe:d1:1c:ef:16:30:17:7a:62:29:0c:6b:72:bc (RSA)
+|   256 98:19:fd:22:0b:e3:07:64:5a:53:ef:7e:cc:cc:96:c9 (ECDSA)
+|_  256 7e:62:a0:7f:56:7a:50:60:07:89:58:8e:1a:ca:04:95 (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul  9 10:21:11 2022 -- 1 IP address (1 host up) scanned in 4.38 seconds

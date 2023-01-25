@@ -1,0 +1,14 @@
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://10.10.10.198:8080" | tee "recon/nikto_10.10.10.198_8080.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '.php' -u "http://10.10.10.198:8080/FUZZ" | tee "recon/ffuf_10.10.10.198_8080.txt"
+
+nikto -host "http://10.10.10.198:| http-open-proxy: Potentially OPEN proxy." | tee "recon/nikto_10.10.10.198_| http-open-proxy: Potentially OPEN proxy..txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '' -u "http://10.10.10.198:| http-open-proxy: Potentially OPEN proxy./FUZZ" | tee "recon/ffuf_10.10.10.198_| http-open-proxy: Potentially OPEN proxy..txt"
+
+
+
+

@@ -1,0 +1,39 @@
+# Nmap 7.92 scan initiated Tue Nov 22 15:28:42 2022 as: /usr/bin/nmap -sCV -p22,139,445,2222 --open -oN nmap/Script_192.168.57.206.nmap --system-dns --stats-every 2s 192.168.57.206
+Nmap scan report for 192.168.57.206
+Host is up (0.043s latency).
+
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 8d:4b:8b:c2:97:a8:36:13:9b:1a:53:8d:5e:40:a1:63 (ECDSA)
+|_  256 9b:fe:99:3e:b2:dd:50:2d:c8:c1:e2:2e:76:e5:20:d4 (ED25519)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 4.6.3 (workgroup: WORKGROUP)
+2222/tcp open  ssh         OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 8d:4b:8b:c2:97:a8:36:13:9b:1a:53:8d:5e:40:a1:63 (ECDSA)
+|_  256 9b:fe:99:3e:b2:dd:50:2d:c8:c1:e2:2e:76:e5:20:d4 (ED25519)
+Service Info: Host: IP-192-168-56-126; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2022-11-22T07:30:21
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.6.3)
+|   Computer name: \x00
+|   NetBIOS computer name: IP-192-168-56-126\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2022-11-22T07:30:20+00:00
+|_clock-skew: mean: 1m25s, deviation: 0s, median: 1m24s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 22 15:29:00 2022 -- 1 IP address (1 host up) scanned in 17.85 seconds

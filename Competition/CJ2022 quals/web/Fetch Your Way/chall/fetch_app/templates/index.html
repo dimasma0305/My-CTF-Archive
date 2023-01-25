@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+      .divx {
+        width: 60%;
+        margin: auto;
+      }
+
+      .output_res {
+        background-color: rgb(231, 224, 224);
+        height: 600px;
+        overflow: auto;
+        border: indigo;
+        border-width: medium;
+        border-style: bold;
+      }
+    </style>
+    <title>Fetch App</title>
+    <h1 style="text-align: center;">Fetch Your URL</h1>
+  </head>
+
+  <body>
+    <div class="divx">
+      <form id="fetch_form">
+        <div class="form-group">
+          <label for="url_input">URL</label>
+          <input type="text" class="form-control" name="url" id="url_input" aria-describedby="" placeholder="Enter URL to fetch">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="module_input">Module</label>
+          <br>
+          <select class="custom-select" id="module_input" name="module">
+            <option selected>Choose module to fetch URL</option>
+            <option value="pycurl">pycurl</option>
+            <option value="urllib">urllib</option>
+          </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <p id="output_fetch" class="output_res"></p>
+    </div>
+
+  
+    <script>
+      $(document).ready(function(){
+        $("#fetch_form").submit(function(e) {
+          e.preventDefault();
+          var form_submit = document.forms[0];
+          
+          $.ajax({
+              type: 'POST',
+              url: '/fetch-your-way',
+              contentType: "application/x-www-form-urlencoded",
+              data: { 
+                  'url': form_submit.url.value, 
+                  'module': form_submit.module.value
+              },
+              success: function(response){
+                document.getElementById("output_fetch").innerText = response;
+              },
+              error: function(xhr, status, error){
+                alert("Error !");
+              }
+          });
+        });
+
+      });
+
+    </script>
+  </body>
+
+  <footer>
+
+  </footer>
+
+</html>

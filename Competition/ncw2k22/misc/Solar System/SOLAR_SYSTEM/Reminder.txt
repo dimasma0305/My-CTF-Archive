@@ -1,0 +1,13 @@
+Untuk format flag, karena terpisah jadi 4 dan flag ke 4 SUDAH INCLUDE dengan }, jadi contohnya:
+semisal flag yang didapat sebagai berikut
+
+flag 1 = ayamgoreng_itu_enak
+flag 2 = 1234567890
+flag 3 = ini_function
+flag 4 = ya_sisanya}
+
+format flag = NCW22{1_2_3_4
+
+maka hasil akhir flag akan menjadi
+
+NCW22{ayamgoreng_itu_enak_1234567890_ini_function_ya_sisanya}

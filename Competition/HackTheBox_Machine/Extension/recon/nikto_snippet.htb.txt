@@ -1,0 +1,16 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.129.30.208
++ Target Hostname:    snippet.htb
++ Target Port:        80
++ Start Time:         2022-07-17 07:20:10 (GMT8)
+---------------------------------------------------------------------------
++ Server: nginx/1.14.0 (Ubuntu)
++ Cookie XSRF-TOKEN created without the httponly flag
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ All CGI directories 'found', use '-C none' to test none
++ Server leaks inodes via ETags, header found with file /favicon.ico, fields: 0x0 0x5d2909c3e3780 
++ Allowed HTTP Methods: GET, HEAD 
++ OSVDB-3092: /web.config: ASP config file is accessible.

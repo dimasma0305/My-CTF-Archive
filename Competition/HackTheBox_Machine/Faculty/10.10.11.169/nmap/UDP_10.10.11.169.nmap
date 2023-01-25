@@ -1,0 +1,8 @@
+# Nmap 7.92 scan initiated Fri Aug  5 06:21:33 2022 as: /usr/bin/nmap -sU --max-retries 1 --open --open -oN nmap/UDP_10.10.11.169.nmap --system-dns --stats-every 3s 10.10.11.169
+Warning: 10.10.11.169 giving up on port because retransmission cap hit (1).
+Nmap scan report for faculty.htb (10.10.11.169)
+Host is up (0.15s latency).
+All 1000 scanned ports on faculty.htb (10.10.11.169) are in ignored states.
+Not shown: 712 open|filtered udp ports (no-response), 288 closed udp ports (port-unreach)
+
+# Nmap done at Fri Aug  5 06:26:17 2022 -- 1 IP address (1 host up) scanned in 284.23 seconds

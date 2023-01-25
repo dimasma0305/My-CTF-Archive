@@ -1,0 +1,9 @@
+[2K.git/logs/              [Status: 200, Size: 1143, Words: 77, Lines: 18, Duration: 56ms][0m
+[2K.git/HEAD               [Status: 200, Size: 21, Words: 2, Lines: 2, Duration: 56ms][0m
+[2K.hta                    [Status: 403, Size: 277, Words: 20, Lines: 10, Duration: 57ms][0m
+[2K.git                    [Status: 301, Size: 315, Words: 20, Lines: 10, Duration: 322ms][0m
+[2K.git/config             [Status: 200, Size: 298, Words: 23, Lines: 14, Duration: 3329ms][0m
+[2K.htaccess               [Status: 403, Size: 277, Words: 20, Lines: 10, Duration: 4341ms][0m
+[2K.git/index              [Status: 200, Size: 521, Words: 4, Lines: 3, Duration: 4341ms][0m
+[2K.htpasswd               [Status: 403, Size: 277, Words: 20, Lines: 10, Duration: 4337ms][0m
+[2Kindex.php               [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 63ms][0m

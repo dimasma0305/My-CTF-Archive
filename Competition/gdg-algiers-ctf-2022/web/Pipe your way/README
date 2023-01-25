@@ -1,0 +1,6 @@
+https://podalirius.net/en/publications/grehack-2021-optimizing-ssti-payloads-for-jinja2/
+https://jinja.palletsprojects.com/en/3.1.x/templates/#list-of-builtin-filters
+https://0x00sec.org/t/explaining-server-side-template-injections/16297
+https://cloud.tencent.com/developer/article/1520397
+
+{{'asd'|map(attribute='__class__')|first}}

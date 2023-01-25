@@ -1,0 +1,13 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:          http://shoppy.htb
+[+] Method:       GET
+[+] Threads:      50
+[+] Wordlist:     /usr/share/wordlists/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt
+[+] User Agent:   gobuster/3.1.0
+[+] Timeout:      10s
+===============================================================
+2022/10/14 19:49:47 Starting gobuster in VHOST enumeration mode
+===============================================================

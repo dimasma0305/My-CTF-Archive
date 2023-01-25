@@ -1,0 +1,119 @@
+
+[0;33mRunning all scans on [0m10.10.0.114
+[0m
+[0;32mHost is likely running Linux
+
+
+[0;32m---------------------Starting Port Scan-----------------------
+[0m
+[0K
+[0K
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+
+
+[0;32m---------------------Starting Script Scan-----------------------
+[0m
+[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 68:06:b9:1e:8a:89:36:e9:a0:d6:40:db:2c:05:27:4a (RSA)
+|   256 c9:b9:51:c6:eb:1a:a7:92:c9:2f:0b:5b:f3:f6:a9:64 (ECDSA)
+|_  256 99:6b:09:02:c9:68:dd:e9:e0:e5:ea:15:2c:dc:d6:df (ED25519)
+80/tcp open  http    Apache/2.4.54 (Unix)
+|_http-title: Pedang Jenawi
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.54 (Unix)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+
+
+[0;32m---------------------Starting Full Scan------------------------
+[0m
+[0K
+[0K
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+
+
+[0;33mNo new ports
+[0m
+
+
+
+[0;32m----------------------Starting UDP Scan------------------------
+[0m
+[0K
+[0K
+
+
+[0;33mNo UDP ports are open
+[0m
+
+
+
+[0;32m---------------------Starting Vulns Scan-----------------------
+[0m
+[0;33mRunning CVE scan on all ports
+[0m
+[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.54 ((Unix))
+|_http-server-header: Apache/2.4.54 (Unix)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+
+[0;33mRunning Vuln scan on all ports
+[0;33mThis may take a while, depending on the number of detected services..
+[0m
+[0K
+[0K
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.4p1: 
+|     	CVE-2021-28041	4.6	https://vulners.com/cve/CVE-2021-28041
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-20012	4.3	https://vulners.com/cve/CVE-2016-20012
+|_    	CVE-2021-36368	2.6	https://vulners.com/cve/CVE-2021-36368
+80/tcp open  http    Apache httpd 2.4.54 ((Unix))
+|_http-server-header: Apache/2.4.54 (Unix)
+| http-enum: 
+|_  /info.php: Possible information file
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+
+
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://10.10.0.114:80" | tee "recon/nikto_10.10.0.114_80.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '.html' -u "http://10.10.0.114:80/FUZZ" | tee "recon/ffuf_10.10.0.114_80.txt"
+
+
+
+
+[0;33m
+Which commands would you like to run?[0m
+All (Default), ffuf, nikto, Skip <!>
+
+[2KRunning Default in (30)s: 

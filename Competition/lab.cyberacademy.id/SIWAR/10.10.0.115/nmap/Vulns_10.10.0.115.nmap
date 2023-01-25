@@ -1,0 +1,17 @@
+WARNING: Duplicate port number(s) specified.  Are you alert enough to be using Nmap?  Have some coffee or Jolt(tm).
+# Nmap 7.92 scan initiated Fri Aug 19 23:27:31 2022 as: /usr/bin/nmap -sV --script vuln -p22,80,22,80 --open -oN nmap/Vulns_10.10.0.115.nmap --system-dns --stats-every 3s 10.10.0.115
+Nmap scan report for 10.10.0.115
+Host is up (0.071s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.54 ((Unix))
+|_http-server-header: Apache/2.4.54 (Unix)
+|_http-trace: TRACE is enabled
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 19 23:28:12 2022 -- 1 IP address (1 host up) scanned in 41.11 seconds

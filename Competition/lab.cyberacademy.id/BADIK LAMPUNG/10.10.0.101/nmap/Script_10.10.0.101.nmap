@@ -1,0 +1,17 @@
+# Nmap 7.92 scan initiated Fri Aug  5 11:00:13 2022 as: /usr/bin/nmap -sCV -p80 --open -oN nmap/Script_10.10.0.101.nmap --system-dns --stats-every 2s 10.10.0.101
+Nmap scan report for 10.10.0.101
+Host is up (0.26s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.10 ((Debian))
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-generator: Drupal 7 (http://drupal.org)
+|_http-title: Welcome to drupal | drupal
+| http-robots.txt: 36 disallowed entries (15 shown)
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt 
+|_/LICENSE.txt /MAINTAINERS.txt
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug  5 11:00:26 2022 -- 1 IP address (1 host up) scanned in 12.43 seconds

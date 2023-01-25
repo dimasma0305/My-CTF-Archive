@@ -1,0 +1,222 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-28 06:08 +08
+Stats: 0:00:03 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 1.40% done; ETC: 06:10 (0:02:21 remaining)
+Warning: 10.10.11.160 giving up on port because retransmission cap hit (1).
+Stats: 0:00:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 3.00% done; ETC: 06:11 (0:02:42 remaining)
+Stats: 0:00:09 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 4.10% done; ETC: 06:11 (0:03:07 remaining)
+Stats: 0:00:12 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 4.75% done; ETC: 06:12 (0:04:01 remaining)
+Stats: 0:00:15 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 6.30% done; ETC: 06:12 (0:03:28 remaining)
+Stats: 0:00:18 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 7.30% done; ETC: 06:12 (0:03:49 remaining)
+Stats: 0:00:21 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 8.15% done; ETC: 06:12 (0:03:45 remaining)
+Stats: 0:00:24 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 8.95% done; ETC: 06:12 (0:04:04 remaining)
+Stats: 0:00:27 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 9.70% done; ETC: 06:12 (0:04:02 remaining)
+Stats: 0:00:30 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 10.30% done; ETC: 06:13 (0:04:21 remaining)
+Stats: 0:00:33 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 10.90% done; ETC: 06:13 (0:04:22 remaining)
+Stats: 0:00:36 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 11.45% done; ETC: 06:13 (0:04:31 remaining)
+Stats: 0:00:39 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 12.25% done; ETC: 06:13 (0:04:32 remaining)
+Stats: 0:00:42 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 13.10% done; ETC: 06:13 (0:04:32 remaining)
+Stats: 0:00:45 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 14.35% done; ETC: 06:13 (0:04:23 remaining)
+Stats: 0:00:48 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 15.65% done; ETC: 06:13 (0:04:13 remaining)
+Stats: 0:00:51 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 16.95% done; ETC: 06:13 (0:04:05 remaining)
+Stats: 0:00:54 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 18.10% done; ETC: 06:13 (0:04:00 remaining)
+Stats: 0:00:57 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 19.55% done; ETC: 06:13 (0:03:50 remaining)
+Stats: 0:01:00 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 21.20% done; ETC: 06:13 (0:03:39 remaining)
+Stats: 0:01:03 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 22.40% done; ETC: 06:12 (0:03:35 remaining)
+Stats: 0:01:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 23.25% done; ETC: 06:13 (0:03:35 remaining)
+Stats: 0:01:09 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 24.05% done; ETC: 06:13 (0:03:35 remaining)
+Stats: 0:01:12 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 24.80% done; ETC: 06:13 (0:03:35 remaining)
+Stats: 0:01:15 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 25.70% done; ETC: 06:13 (0:03:34 remaining)
+Stats: 0:01:18 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 26.60% done; ETC: 06:13 (0:03:32 remaining)
+Stats: 0:01:21 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 27.50% done; ETC: 06:13 (0:03:31 remaining)
+Stats: 0:01:24 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 28.35% done; ETC: 06:13 (0:03:30 remaining)
+Stats: 0:01:27 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 29.25% done; ETC: 06:13 (0:03:28 remaining)
+Stats: 0:01:30 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 30.15% done; ETC: 06:13 (0:03:26 remaining)
+Stats: 0:01:33 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 31.05% done; ETC: 06:13 (0:03:24 remaining)
+Stats: 0:01:36 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 31.95% done; ETC: 06:13 (0:03:22 remaining)
+Stats: 0:01:39 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 32.85% done; ETC: 06:13 (0:03:20 remaining)
+Stats: 0:01:42 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 33.75% done; ETC: 06:13 (0:03:18 remaining)
+Stats: 0:01:45 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 34.65% done; ETC: 06:13 (0:03:16 remaining)
+Stats: 0:01:48 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 35.55% done; ETC: 06:13 (0:03:14 remaining)
+Stats: 0:01:51 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 36.45% done; ETC: 06:13 (0:03:12 remaining)
+Stats: 0:01:54 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 37.35% done; ETC: 06:13 (0:03:10 remaining)
+Stats: 0:01:57 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 38.05% done; ETC: 06:13 (0:03:09 remaining)
+Stats: 0:02:00 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 38.75% done; ETC: 06:13 (0:03:08 remaining)
+Stats: 0:02:03 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 39.50% done; ETC: 06:13 (0:03:07 remaining)
+Stats: 0:02:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 40.20% done; ETC: 06:13 (0:03:06 remaining)
+Stats: 0:02:09 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 41.00% done; ETC: 06:13 (0:03:04 remaining)
+Stats: 0:02:12 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 41.90% done; ETC: 06:13 (0:03:02 remaining)
+Stats: 0:02:15 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 42.70% done; ETC: 06:13 (0:03:00 remaining)
+Stats: 0:02:18 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 43.60% done; ETC: 06:13 (0:02:57 remaining)
+Stats: 0:02:21 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 44.50% done; ETC: 06:13 (0:02:55 remaining)
+Stats: 0:02:24 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 45.40% done; ETC: 06:13 (0:02:52 remaining)
+Stats: 0:02:27 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 46.30% done; ETC: 06:13 (0:02:49 remaining)
+Stats: 0:02:30 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 47.20% done; ETC: 06:13 (0:02:47 remaining)
+Stats: 0:02:33 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 48.10% done; ETC: 06:13 (0:02:44 remaining)
+Stats: 0:02:36 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 49.00% done; ETC: 06:13 (0:02:41 remaining)
+Stats: 0:02:39 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 49.90% done; ETC: 06:13 (0:02:39 remaining)
+Stats: 0:02:42 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 50.80% done; ETC: 06:13 (0:02:36 remaining)
+Stats: 0:02:45 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 51.70% done; ETC: 06:13 (0:02:33 remaining)
+Stats: 0:02:48 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 52.60% done; ETC: 06:13 (0:02:30 remaining)
+Stats: 0:02:51 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 53.50% done; ETC: 06:13 (0:02:28 remaining)
+Stats: 0:02:54 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 54.40% done; ETC: 06:13 (0:02:25 remaining)
+Stats: 0:02:57 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 55.25% done; ETC: 06:13 (0:02:23 remaining)
+Stats: 0:03:00 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 56.15% done; ETC: 06:13 (0:02:20 remaining)
+Stats: 0:03:03 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 57.05% done; ETC: 06:13 (0:02:17 remaining)
+Stats: 0:03:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 57.95% done; ETC: 06:13 (0:02:14 remaining)
+Stats: 0:03:09 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 58.85% done; ETC: 06:13 (0:02:11 remaining)
+Stats: 0:03:12 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 59.75% done; ETC: 06:13 (0:02:09 remaining)
+Stats: 0:03:15 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 60.65% done; ETC: 06:13 (0:02:06 remaining)
+Stats: 0:03:18 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 61.55% done; ETC: 06:13 (0:02:03 remaining)
+Stats: 0:03:21 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 62.45% done; ETC: 06:13 (0:02:00 remaining)
+Stats: 0:03:24 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 63.35% done; ETC: 06:13 (0:01:57 remaining)
+Stats: 0:03:27 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 64.25% done; ETC: 06:13 (0:01:55 remaining)
+Stats: 0:03:30 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 65.15% done; ETC: 06:13 (0:01:52 remaining)
+Stats: 0:03:33 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 66.05% done; ETC: 06:13 (0:01:49 remaining)
+Stats: 0:03:36 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 66.95% done; ETC: 06:13 (0:01:46 remaining)
+Stats: 0:03:39 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 67.85% done; ETC: 06:13 (0:01:43 remaining)
+Stats: 0:03:42 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 68.75% done; ETC: 06:13 (0:01:40 remaining)
+Stats: 0:03:45 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 69.65% done; ETC: 06:13 (0:01:38 remaining)
+Stats: 0:03:48 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 70.55% done; ETC: 06:13 (0:01:35 remaining)
+Stats: 0:03:51 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 71.45% done; ETC: 06:13 (0:01:32 remaining)
+Stats: 0:03:54 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 72.35% done; ETC: 06:13 (0:01:29 remaining)
+Stats: 0:03:57 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 73.25% done; ETC: 06:13 (0:01:26 remaining)
+Stats: 0:04:00 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 74.15% done; ETC: 06:13 (0:01:23 remaining)
+Stats: 0:04:03 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 75.05% done; ETC: 06:13 (0:01:20 remaining)
+Stats: 0:04:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 75.95% done; ETC: 06:13 (0:01:18 remaining)
+Stats: 0:04:09 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 76.85% done; ETC: 06:13 (0:01:15 remaining)
+Stats: 0:04:12 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 77.75% done; ETC: 06:13 (0:01:12 remaining)
+Stats: 0:04:15 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 78.65% done; ETC: 06:13 (0:01:09 remaining)
+Stats: 0:04:18 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 79.55% done; ETC: 06:13 (0:01:06 remaining)
+Stats: 0:04:21 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 80.45% done; ETC: 06:13 (0:01:03 remaining)
+Stats: 0:04:24 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 81.35% done; ETC: 06:13 (0:01:00 remaining)
+Stats: 0:04:27 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 82.25% done; ETC: 06:13 (0:00:57 remaining)
+Stats: 0:04:30 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 83.15% done; ETC: 06:13 (0:00:55 remaining)
+Stats: 0:04:33 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 84.05% done; ETC: 06:13 (0:00:52 remaining)
+Stats: 0:04:36 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 84.95% done; ETC: 06:13 (0:00:49 remaining)
+Stats: 0:04:39 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 85.75% done; ETC: 06:13 (0:00:46 remaining)
+Stats: 0:04:42 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 86.50% done; ETC: 06:13 (0:00:44 remaining)
+Stats: 0:04:45 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 87.20% done; ETC: 06:13 (0:00:42 remaining)
+Stats: 0:04:48 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 88.05% done; ETC: 06:13 (0:00:39 remaining)
+Stats: 0:04:51 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 88.95% done; ETC: 06:13 (0:00:36 remaining)
+Stats: 0:04:54 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 89.80% done; ETC: 06:13 (0:00:33 remaining)
+Stats: 0:04:57 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 90.70% done; ETC: 06:13 (0:00:30 remaining)
+Stats: 0:05:00 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 91.60% done; ETC: 06:13 (0:00:27 remaining)
+Stats: 0:05:03 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 92.50% done; ETC: 06:13 (0:00:24 remaining)
+Stats: 0:05:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 93.40% done; ETC: 06:13 (0:00:22 remaining)
+Stats: 0:05:09 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 94.30% done; ETC: 06:13 (0:00:19 remaining)
+Stats: 0:05:12 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 95.20% done; ETC: 06:13 (0:00:16 remaining)
+Stats: 0:05:15 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 96.10% done; ETC: 06:13 (0:00:13 remaining)
+Stats: 0:05:18 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 97.00% done; ETC: 06:13 (0:00:10 remaining)
+Stats: 0:05:21 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 97.90% done; ETC: 06:13 (0:00:07 remaining)
+Stats: 0:05:24 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 98.80% done; ETC: 06:13 (0:00:04 remaining)
+Stats: 0:05:27 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 99.70% done; ETC: 06:13 (0:00:01 remaining)
+Stats: 0:05:30 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 99.99% done; ETC: 06:13 (0:00:00 remaining)

@@ -1,0 +1,89 @@
+WARNING: Duplicate port number(s) specified.  Are you alert enough to be using Nmap?  Have some coffee or Jolt(tm).
+# Nmap 7.92 scan initiated Mon Jun 27 06:50:56 2022 as: /usr/bin/nmap -sV --script vuln -p22,80,22,80 --open -oN nmap/Vulns_10.10.11.146.nmap --system-dns --stats-every 3s 10.10.11.146
+Nmap scan report for djewelry.htb (10.10.11.146)
+Host is up (0.055s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.2: 
+|     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+|     	C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	6.8	https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	*EXPLOIT*
+|     	10213DBE-F683-58BB-B6D3-353173626207	6.8	https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207	*EXPLOIT*
+|     	CVE-2020-12062	5.0	https://vulners.com/cve/CVE-2020-12062
+|     	CVE-2021-28041	4.6	https://vulners.com/cve/CVE-2021-28041
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-20012	4.3	https://vulners.com/cve/CVE-2016-20012
+|_    	CVE-2021-36368	2.6	https://vulners.com/cve/CVE-2021-36368
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-enum: 
+|   /css/: Potentially interesting directory w/ listing on 'apache/2.4.41 (ubuntu)'
+|   /images/: Potentially interesting directory w/ listing on 'apache/2.4.41 (ubuntu)'
+|_  /js/: Potentially interesting directory w/ listing on 'apache/2.4.41 (ubuntu)'
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.41: 
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+|     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+|     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
+|     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	1337DAY-ID-34882	7.5	https://vulners.com/zdt/1337DAY-ID-34882	*EXPLOIT*
+|     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
+|     	CVE-2022-22721	6.8	https://vulners.com/cve/CVE-2022-22721
+|     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
+|     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
+|     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
+|     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
+|     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+|     	CVE-2022-30522	5.0	https://vulners.com/cve/CVE-2022-30522
+|     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+|     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+|     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
+|     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
+|     	CVE-2021-36160	5.0	https://vulners.com/cve/CVE-2021-36160
+|     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
+|     	CVE-2021-33193	5.0	https://vulners.com/cve/CVE-2021-33193
+|     	CVE-2021-30641	5.0	https://vulners.com/cve/CVE-2021-30641
+|     	CVE-2021-26690	5.0	https://vulners.com/cve/CVE-2021-26690
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2020-13950	5.0	https://vulners.com/cve/CVE-2020-13950
+|     	CVE-2019-17567	5.0	https://vulners.com/cve/CVE-2019-17567
+|     	CVE-2020-11993	4.3	https://vulners.com/cve/CVE-2020-11993
+|_    	1337DAY-ID-35422	4.3	https://vulners.com/zdt/1337DAY-ID-35422	*EXPLOIT*
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://djewelry.htb:80/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=S%3BO%3DD%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=D%3BO%3DD%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://djewelry.htb:80/js/?C=N%3BO%3DA%27%20OR%20sqlspider
+|_    http://djewelry.htb:80/js/?C=M%3BO%3DD%27%20OR%20sqlspider
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 27 06:51:55 2022 -- 1 IP address (1 host up) scanned in 59.01 seconds

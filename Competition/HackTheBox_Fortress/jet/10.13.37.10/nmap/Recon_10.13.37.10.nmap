@@ -1,0 +1,22 @@
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mDNS Recon:
+[0m
+host -l "10.13.37.10" "192.168.43.1" | tee "recon/hostname_10.13.37.10.txt"
+dnsrecon -r "10.13.37.0/24" -n "192.168.43.1" | tee "recon/dnsrecon_10.13.37.10.txt"
+dnsrecon -r 127.0.0.0/24 -n "192.168.43.1" | tee "recon/dnsrecon-local_10.13.37.10.txt"
+dig -x "10.13.37.10" @192.168.43.1 | tee "recon/dig_10.13.37.10.txt"
+
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://10.13.37.10:80" | tee "recon/nikto_10.13.37.10_80.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '' -u "http://10.13.37.10:80/FUZZ" | tee "recon/ffuf_10.13.37.10_80.txt"
+
+nikto -host "http://10.13.37.10:9201" | tee "recon/nikto_10.13.37.10_9201.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '' -u "http://10.13.37.10:9201/FUZZ" | tee "recon/ffuf_10.13.37.10_9201.txt"
+
+
+
+
