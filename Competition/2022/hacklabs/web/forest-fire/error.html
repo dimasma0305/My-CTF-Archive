@@ -1,0 +1,33 @@
+<form id="api/v1/donation">
+    <label>v1/api/donation</label>
+    <input id="donationVal" type="text" placeholder="donationVal">
+    <button type="submit">submit</button>
+</form>
+
+<div id="data"></div>
+
+<script>
+    const URL = "http://103.185.38.202:23891/api/v1/donation"
+    const form = document.getElementById("form")
+    const data = document.getElementById("data")
+    const donation = document.getElementById("donationVal")
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault()
+        await fetch(URL, {
+            method: "POST",
+            mode: "cors",
+            headers: {
+                "Content-type":"application/json"
+            },
+            body: JSON.stringify({
+                "donationVal": donation.value
+            }),
+        }).then(async e => {
+            const frame = document.createElement('iframe');
+            frame.srcdoc = await e.text();
+            frame.width = "100%"
+            frame.height = "100%"
+            data.innerHTML = frame.outerHTML
+        })
+    })
+</script>
