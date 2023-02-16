@@ -1,0 +1,151 @@
+{
+  "main": {
+    "id": "2dad21a568875ac1",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a4aeb9df29a46c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84f4e3e82d8eac82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Competition/2023/LACTF-2023/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a4b87bfc2704636b",
+    "type": "split",
+    "children": [
+      {
+        "id": "a243bffbbb864e7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9d2771feb9dfb33",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8c9c61caaa3e660b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1210ccce0553bee9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "44c4f908d0d03dde",
+    "type": "split",
+    "children": [
+      {
+        "id": "215491da807a7f4f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d7f8da928dad3fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Competition/2023/LACTF-2023/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dca0a6946c91cb65",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Competition/2023/LACTF-2023/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7c91bc0d3baac953",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ec0d3a5bb234c672",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Competition/2023/LACTF-2023/README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "84f4e3e82d8eac82",
+  "lastOpenFiles": []
+}
